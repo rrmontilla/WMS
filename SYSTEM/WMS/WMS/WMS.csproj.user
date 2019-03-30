@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProjectView>ShowAllFiles</ProjectView>
+    <PublishUrlHistory>\\192.168.173.1\win_app\wms\|publish\</PublishUrlHistory>
+    <InstallUrlHistory>http://192.168.173.1/win_app/|http://192.168.173.1/win_app/wms/|http://192.168.173.1/wswms/service.asmx/</InstallUrlHistory>
+    <SupportUrlHistory />
+    <UpdateUrlHistory>http://192.168.173.1/win_app/|http://192.168.173.1/win_app/wms/</UpdateUrlHistory>
+    <BootstrapperUrlHistory />
+    <ErrorReportUrlHistory />
+    <FallbackCulture>en-US</FallbackCulture>
+    <VerifyUploadedFiles>false</VerifyUploadedFiles>
+  </PropertyGroup>
+  <PropertyGroup>
+    <EnableSecurityDebugging>false</EnableSecurityDebugging>
+  </PropertyGroup>
+</Project>

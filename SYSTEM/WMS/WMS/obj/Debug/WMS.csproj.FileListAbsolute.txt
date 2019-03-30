@@ -1,0 +1,435 @@
+B:\Projects\WMS\WMS\WMS\bin\Debug\WMS.exe
+B:\Projects\WMS\WMS\WMS\bin\Debug\WMS.pdb
+B:\Projects\WMS\WMS\WMS\obj\Debug\WMS.WMS_Main.resources
+B:\Projects\WMS\WMS\WMS\obj\Debug\WMS.Properties.Resources.resources
+B:\Projects\WMS\WMS\WMS\obj\Debug\WMS.csproj.GenerateResource.Cache
+B:\Projects\WMS\WMS\WMS\obj\Debug\WMS.exe
+B:\Projects\WMS\WMS\WMS\obj\Debug\WMS.pdb
+B:\Projects\WMS\WMS\WMS\obj\Debug\WMS.AccessRight_frm.resources
+B:\Projects\WMS\WMS\WMS\obj\Debug\WMS.Supplier_frm.resources
+B:\Projects\WMS\WMS\WMS\obj\Debug\WMS.items_frm.resources
+B:\Projects\WMS\WMS\WMS\bin\Debug\WMS.exe.config
+B:\Projects\WMS\WMS\WMS\obj\Debug\WMS.User_frm.resources
+B:\Projects\WMS\WMS\WMS\obj\Debug\WMS.Branch_frm.resources
+B:\Projects\WMS\WMS\WMS\obj\Debug\WMS.Department_frm.resources
+B:\Projects\WMS\WMS\WMS\obj\Debug\WMS.Position_frm.resources
+B:\Projects\WMS\WMS\WMS\obj\Debug\WMS.WMS_security.resources
+B:\Projects\WMS\WMS\WMS\obj\Debug\WMS.COA_frm.resources
+B:\Projects\WMS\WMS\WMS\obj\Debug\WMS.CanvassAppr_frm.resources
+B:\Projects\WMS\WMS\WMS\obj\Debug\WMS.CanvassEnd_frm.resources
+B:\Projects\WMS\WMS\WMS\obj\Debug\WMS.CanvassPrep_frm.resources
+B:\Projects\WMS\WMS\WMS\obj\Debug\WMS.POApproved_frm.resources
+B:\Projects\WMS\WMS\WMS\obj\Debug\WMS.POEndorse_frm.resources
+B:\Projects\WMS\WMS\WMS\obj\Debug\WMS.POPrep_frm.resources
+B:\Projects\WMS\WMS\WMS\obj\Debug\WMS.PORecomend_frm.resources
+E:\WORKSPACE\PROJECT\WMS\WMS\WMS\bin\Debug\WMS.exe.config
+E:\WORKSPACE\PROJECT\WMS\WMS\WMS\obj\Debug\WMS.exe
+E:\WORKSPACE\PROJECT\WMS\WMS\WMS\obj\Debug\WMS.pdb
+E:\WMS Project\WMS\WMS\bin\Debug\WMS.exe.config
+E:\WMS Project\WMS\WMS\obj\Debug\WMS.exe
+E:\WMS Project\WMS\WMS\obj\Debug\WMS.pdb
+E:\WMS Project\WMS\WMS\obj\Debug\WMS.csprojResolveAssemblyReference.cache
+E:\WMS Project\WMS\WMS\obj\Debug\WMS.UI_Report.Report_frm.resources
+E:\WMS Project\WMS\WMS\obj\Debug\WMS.UI_RO.ROApproved_frm.resources
+E:\WMS Project\WMS\WMS\obj\Debug\WMS.UI_RO.ROEndorse_frm.resources
+E:\WMS Project\WMS\WMS\obj\Debug\WMS.UI_RO.ROPrep_frm.resources
+E:\WMS Project\WMS\WMS\obj\Debug\WMS.UI_RO.RORecommend_frm.resources
+E:\WMS Project\WMS\WMS\obj\Debug\WMS.AccessRight_frm.resources
+E:\WMS Project\WMS\WMS\obj\Debug\WMS.Branch_frm.resources
+E:\WMS Project\WMS\WMS\obj\Debug\WMS.CanvassAppr_frm.resources
+E:\WMS Project\WMS\WMS\obj\Debug\WMS.CanvassEnd_frm.resources
+E:\WMS Project\WMS\WMS\obj\Debug\WMS.CanvassPrep_frm.resources
+E:\WMS Project\WMS\WMS\obj\Debug\WMS.CanvassRec_frm.resources
+E:\WMS Project\WMS\WMS\obj\Debug\WMS.COA_frm.resources
+E:\WMS Project\WMS\WMS\obj\Debug\WMS.Department_frm.resources
+E:\WMS Project\WMS\WMS\obj\Debug\WMS.items_frm.resources
+E:\WMS Project\WMS\WMS\obj\Debug\WMS.POApproved_frm.resources
+E:\WMS Project\WMS\WMS\obj\Debug\WMS.POEndorse_frm.resources
+E:\WMS Project\WMS\WMS\obj\Debug\WMS.POPrep_frm.resources
+E:\WMS Project\WMS\WMS\obj\Debug\WMS.PORecomend_frm.resources
+E:\WMS Project\WMS\WMS\obj\Debug\WMS.Position_frm.resources
+E:\WMS Project\WMS\WMS\obj\Debug\WMS.Supplier_frm.resources
+E:\WMS Project\WMS\WMS\obj\Debug\WMS.User_frm.resources
+E:\WMS Project\WMS\WMS\obj\Debug\WMS.WMS_Main.resources
+E:\WMS Project\WMS\WMS\obj\Debug\WMS.Properties.Resources.resources
+E:\WMS Project\WMS\WMS\obj\Debug\WMS.WMS_security.resources
+E:\WMS Project\WMS\WMS\obj\Debug\WMS.csproj.GenerateResource.Cache
+E:\WORKSPACE\PROJECT\WMS\08102018\WMS\WMS\bin\Debug\WMS.exe.config
+E:\WORKSPACE\PROJECT\WMS\08102018\WMS\WMS\obj\Debug\WMS.csprojResolveAssemblyReference.cache
+E:\WORKSPACE\PROJECT\WMS\08102018\WMS\WMS\obj\Debug\WMS.UI_Report.Report_frm.resources
+E:\WORKSPACE\PROJECT\WMS\08102018\WMS\WMS\obj\Debug\WMS.UI_Report.Report_RO.resources
+E:\WORKSPACE\PROJECT\WMS\08102018\WMS\WMS\obj\Debug\WMS.UI_RO.ROApproved_frm.resources
+E:\WORKSPACE\PROJECT\WMS\08102018\WMS\WMS\obj\Debug\WMS.UI_RO.ROEndorse_frm.resources
+E:\WORKSPACE\PROJECT\WMS\08102018\WMS\WMS\obj\Debug\WMS.UI_RO.RORecommend_frm.resources
+E:\WORKSPACE\PROJECT\WMS\08102018\WMS\WMS\obj\Debug\WMS.AccessRight_frm.resources
+E:\WORKSPACE\PROJECT\WMS\08102018\WMS\WMS\obj\Debug\WMS.Branch_frm.resources
+E:\WORKSPACE\PROJECT\WMS\08102018\WMS\WMS\obj\Debug\WMS.CanvassAppr_frm.resources
+E:\WORKSPACE\PROJECT\WMS\08102018\WMS\WMS\obj\Debug\WMS.CanvassEnd_frm.resources
+E:\WORKSPACE\PROJECT\WMS\08102018\WMS\WMS\obj\Debug\WMS.CanvassPrep_frm.resources
+E:\WORKSPACE\PROJECT\WMS\08102018\WMS\WMS\obj\Debug\WMS.CanvassRec_frm.resources
+E:\WORKSPACE\PROJECT\WMS\08102018\WMS\WMS\obj\Debug\WMS.COA_frm.resources
+E:\WORKSPACE\PROJECT\WMS\08102018\WMS\WMS\obj\Debug\WMS.Department_frm.resources
+E:\WORKSPACE\PROJECT\WMS\08102018\WMS\WMS\obj\Debug\WMS.items_frm.resources
+E:\WORKSPACE\PROJECT\WMS\08102018\WMS\WMS\obj\Debug\WMS.POApproved_frm.resources
+E:\WORKSPACE\PROJECT\WMS\08102018\WMS\WMS\obj\Debug\WMS.POEndorse_frm.resources
+E:\WORKSPACE\PROJECT\WMS\08102018\WMS\WMS\obj\Debug\WMS.POPrep_frm.resources
+E:\WORKSPACE\PROJECT\WMS\08102018\WMS\WMS\obj\Debug\WMS.PORecomend_frm.resources
+E:\WORKSPACE\PROJECT\WMS\08102018\WMS\WMS\obj\Debug\WMS.Position_frm.resources
+E:\WORKSPACE\PROJECT\WMS\08102018\WMS\WMS\obj\Debug\WMS.Supplier_frm.resources
+E:\WORKSPACE\PROJECT\WMS\08102018\WMS\WMS\obj\Debug\WMS.User_frm.resources
+E:\WORKSPACE\PROJECT\WMS\08102018\WMS\WMS\obj\Debug\WMS.WMS_Main.resources
+E:\WORKSPACE\PROJECT\WMS\08102018\WMS\WMS\obj\Debug\WMS.Properties.Resources.resources
+E:\WORKSPACE\PROJECT\WMS\08102018\WMS\WMS\obj\Debug\WMS.WMS_security.resources
+E:\WORKSPACE\PROJECT\WMS\08102018\WMS\WMS\obj\Debug\WMS.csproj.GenerateResource.Cache
+E:\WORKSPACE\PROJECT\WMS\08102018\WMS\WMS\obj\Debug\RdlCompile.cache
+E:\WORKSPACE\PROJECT\WMS\08102018\WMS\WMS\obj\Debug\RdlCompile.compiled
+E:\WMS Project\08102018\WMS\WMS\bin\Debug\WMS.exe.config
+E:\WMS Project\08102018\WMS\WMS\bin\Debug\WMS.exe
+E:\WMS Project\08102018\WMS\WMS\bin\Debug\WMS.pdb
+E:\WMS Project\08102018\WMS\WMS\obj\Debug\WMS.UI_Report.Report_frm.resources
+E:\WMS Project\08102018\WMS\WMS\obj\Debug\WMS.UI_Report.Report_RO.resources
+E:\WMS Project\08102018\WMS\WMS\obj\Debug\WMS.UI_RO.ROApproved_frm.resources
+E:\WMS Project\08102018\WMS\WMS\obj\Debug\WMS.UI_RO.ROEndorse_frm.resources
+E:\WMS Project\08102018\WMS\WMS\obj\Debug\WMS.UI_RO.RORecommend_frm.resources
+E:\WMS Project\08102018\WMS\WMS\obj\Debug\WMS.AccessRight_frm.resources
+E:\WMS Project\08102018\WMS\WMS\obj\Debug\WMS.Branch_frm.resources
+E:\WMS Project\08102018\WMS\WMS\obj\Debug\WMS.CanvassAppr_frm.resources
+E:\WMS Project\08102018\WMS\WMS\obj\Debug\WMS.CanvassEnd_frm.resources
+E:\WMS Project\08102018\WMS\WMS\obj\Debug\WMS.CanvassPrep_frm.resources
+E:\WMS Project\08102018\WMS\WMS\obj\Debug\WMS.CanvassRec_frm.resources
+E:\WMS Project\08102018\WMS\WMS\obj\Debug\WMS.COA_frm.resources
+E:\WMS Project\08102018\WMS\WMS\obj\Debug\WMS.Department_frm.resources
+E:\WMS Project\08102018\WMS\WMS\obj\Debug\WMS.items_frm.resources
+E:\WMS Project\08102018\WMS\WMS\obj\Debug\WMS.POApproved_frm.resources
+E:\WMS Project\08102018\WMS\WMS\obj\Debug\WMS.POEndorse_frm.resources
+E:\WMS Project\08102018\WMS\WMS\obj\Debug\WMS.POPrep_frm.resources
+E:\WMS Project\08102018\WMS\WMS\obj\Debug\WMS.PORecomend_frm.resources
+E:\WMS Project\08102018\WMS\WMS\obj\Debug\WMS.Position_frm.resources
+E:\WMS Project\08102018\WMS\WMS\obj\Debug\WMS.Supplier_frm.resources
+E:\WMS Project\08102018\WMS\WMS\obj\Debug\WMS.User_frm.resources
+E:\WMS Project\08102018\WMS\WMS\obj\Debug\WMS.WMS_Main.resources
+E:\WMS Project\08102018\WMS\WMS\obj\Debug\WMS.Properties.Resources.resources
+E:\WMS Project\08102018\WMS\WMS\obj\Debug\WMS.WMS_security.resources
+E:\WMS Project\08102018\WMS\WMS\obj\Debug\WMS.csproj.GenerateResource.Cache
+E:\WMS Project\08102018\WMS\WMS\obj\Debug\RdlCompile.cache
+E:\WMS Project\08102018\WMS\WMS\obj\Debug\RdlCompile.compiled
+E:\WMS Project\08102018\WMS\WMS\obj\Debug\WMS.exe
+E:\WMS Project\08102018\WMS\WMS\obj\Debug\WMS.pdb
+E:\WMS Project\08102018\WMS\WMS\obj\Debug\WMS.csprojResolveAssemblyReference.cache
+E:\WORKSPACE\PROJECT\WMS\08102018\WMS\WMS\obj\Debug\WMS.exe
+E:\WORKSPACE\PROJECT\WMS\08102018\WMS\WMS\obj\Debug\WMS.pdb
+E:\WORKSPACE\PROJECT\WMS\08102018\WMS\WMS\bin\Debug\WMS.exe
+E:\WORKSPACE\PROJECT\WMS\08102018\WMS\WMS\bin\Debug\WMS.pdb
+B:\Projects\WMS\WMS\WMS\obj\Debug\WMS.UI_Report.Report_frm.resources
+B:\Projects\WMS\WMS\WMS\obj\Debug\WMS.UI_Report.Report_RO.resources
+B:\Projects\WMS\WMS\WMS\obj\Debug\WMS.UI_RO.ROApproved_frm.resources
+B:\Projects\WMS\WMS\WMS\obj\Debug\WMS.UI_RO.ROEndorse_frm.resources
+B:\Projects\WMS\WMS\WMS\obj\Debug\WMS.UI_RO.ROPrep_frm.resources
+B:\Projects\WMS\WMS\WMS\obj\Debug\WMS.UI_RO.RORecommend_frm.resources
+B:\Projects\WMS\WMS\WMS\obj\Debug\RdlCompile.cache
+B:\Projects\WMS\WMS\WMS\obj\Debug\RdlCompile.compiled
+B:\Projects\WMS\WMS\WMS\bin\Debug\WMS.exe.manifest
+B:\Projects\WMS\WMS\WMS\bin\Debug\WMS.application
+B:\Projects\WMS\WMS\WMS\obj\Debug\WMS.exe.manifest
+B:\Projects\WMS\WMS\WMS\obj\Debug\WMS.application
+B:\Projects\WMS\WMS\WMS\obj\Debug\WMS.csprojResolveAssemblyReference.cache
+E:\USB BACK UP 08222018\WMS\WMS\bin\Debug\WMS.exe.config
+E:\USB BACK UP 08222018\WMS\WMS\obj\Debug\WMS.exe
+E:\USB BACK UP 08222018\WMS\WMS\obj\Debug\WMS.pdb
+E:\USB BACK UP 08222018\WMS\WMS\obj\Debug\WMS.csprojResolveAssemblyReference.cache
+E:\USB BACK UP 08222018\WMS\WMS\obj\Debug\Uploading.UI.Report.resources
+E:\USB BACK UP 08222018\WMS\WMS\obj\Debug\WMS.UI_Report.Report_frm.resources
+E:\USB BACK UP 08222018\WMS\WMS\obj\Debug\WMS.UI_Report.Report_RO.resources
+E:\USB BACK UP 08222018\WMS\WMS\obj\Debug\WMS.UI_RO.ROApproved_frm.resources
+E:\USB BACK UP 08222018\WMS\WMS\obj\Debug\WMS.UI_RO.ROEndorse_frm.resources
+E:\USB BACK UP 08222018\WMS\WMS\obj\Debug\WMS.UI_RO.ROPrep_frm.resources
+E:\USB BACK UP 08222018\WMS\WMS\obj\Debug\WMS.UI_RO.RORecommend_frm.resources
+E:\USB BACK UP 08222018\WMS\WMS\obj\Debug\WMS.AccessRight_frm.resources
+E:\USB BACK UP 08222018\WMS\WMS\obj\Debug\WMS.Branch_frm.resources
+E:\USB BACK UP 08222018\WMS\WMS\obj\Debug\WMS.CanvassAppr_frm.resources
+E:\USB BACK UP 08222018\WMS\WMS\obj\Debug\WMS.CanvassEnd_frm.resources
+E:\USB BACK UP 08222018\WMS\WMS\obj\Debug\WMS.CanvassPrep_frm.resources
+E:\USB BACK UP 08222018\WMS\WMS\obj\Debug\WMS.COA_frm.resources
+E:\USB BACK UP 08222018\WMS\WMS\obj\Debug\Uploading.UI.Construction.resources
+E:\USB BACK UP 08222018\WMS\WMS\obj\Debug\WMS.Department_frm.resources
+E:\USB BACK UP 08222018\WMS\WMS\obj\Debug\WMS.items_frm.resources
+E:\USB BACK UP 08222018\WMS\WMS\obj\Debug\WMS.POApproved_frm.resources
+E:\USB BACK UP 08222018\WMS\WMS\obj\Debug\WMS.POEndorse_frm.resources
+E:\USB BACK UP 08222018\WMS\WMS\obj\Debug\WMS.POPrep_frm.resources
+E:\USB BACK UP 08222018\WMS\WMS\obj\Debug\WMS.PORecomend_frm.resources
+E:\USB BACK UP 08222018\WMS\WMS\obj\Debug\WMS.Position_frm.resources
+E:\USB BACK UP 08222018\WMS\WMS\obj\Debug\WMS.Supplier_frm.resources
+E:\USB BACK UP 08222018\WMS\WMS\obj\Debug\WMS.User_frm.resources
+E:\USB BACK UP 08222018\WMS\WMS\obj\Debug\Uploading.UI.ViewConstruction.resources
+E:\USB BACK UP 08222018\WMS\WMS\obj\Debug\WMS.WMS_Login.resources
+E:\USB BACK UP 08222018\WMS\WMS\obj\Debug\WMS.WMS_Main.resources
+E:\USB BACK UP 08222018\WMS\WMS\obj\Debug\WMS.Properties.Resources.resources
+E:\USB BACK UP 08222018\WMS\WMS\obj\Debug\WMS.WMS_security.resources
+E:\USB BACK UP 08222018\WMS\WMS\obj\Debug\WMS.csproj.GenerateResource.Cache
+E:\USB BACK UP 08222018\WMS\WMS\obj\Debug\RdlCompile.cache
+E:\USB BACK UP 08222018\WMS\WMS\obj\Debug\RdlCompile.compiled
+E:\USB BACK UP 08222018\WMS\WMS\obj\Debug\WMS.UI_Accountability.Accountability_frm.resources
+E:\USB BACK UP 08222018\WMS\WMS\obj\Debug\Uploading.UI.Project_frm.resources
+E:\USB BACK UP 08222018\WMS\WMS\obj\Debug\WMS.UI_RR.ReceivingReport_frm.resources
+E:\USB BACK UP 08222018\WMS\WMS\obj\Debug\Uploading.UI.View.resources
+E:\USB BACK UP 08222018\WMS\WMS\bin\Debug\WMS.exe.manifest
+E:\USB BACK UP 08222018\WMS\WMS\bin\Debug\WMS.application
+E:\USB BACK UP 08222018\WMS\WMS\bin\Debug\WMS.exe
+E:\USB BACK UP 08222018\WMS\WMS\bin\Debug\WMS.pdb
+E:\USB BACK UP 08222018\WMS\WMS\obj\Debug\WMS.exe.manifest
+E:\USB BACK UP 08222018\WMS\WMS\obj\Debug\WMS.application
+E:\USB BACK UP 08222018\WMS\WMS\obj\Debug\WMS.UI_Tools.View_frm.resources
+E:\USB BACK UP 08222018\WMS\WMS\obj\Debug\WMS.UI_Report.Report_frm1.resources
+B:\Projects\WMS\WMS 0910218\WMS\WMS\bin\Debug\WMS.exe.config
+B:\Projects\WMS\WMS 0910218\WMS\WMS\obj\Debug\WMS.exe
+B:\Projects\WMS\WMS 0910218\WMS\WMS\obj\Debug\WMS.pdb
+B:\Projects\WMS\WMS 0910218\WMS\WMS\obj\Debug\WMS.csprojResolveAssemblyReference.cache
+B:\Projects\WMS\WMS 0910218\WMS\WMS\obj\Debug\WMS.UI_Accountability.Accountability_frm.resources
+B:\Projects\WMS\WMS 0910218\WMS\WMS\obj\Debug\Uploading.UI.Project_frm.resources
+B:\Projects\WMS\WMS 0910218\WMS\WMS\obj\Debug\Uploading.UI.Report.resources
+B:\Projects\WMS\WMS 0910218\WMS\WMS\obj\Debug\WMS.UI_Report.Report_frm.resources
+B:\Projects\WMS\WMS 0910218\WMS\WMS\obj\Debug\WMS.UI_Report.Report_frm1.resources
+B:\Projects\WMS\WMS 0910218\WMS\WMS\obj\Debug\WMS.UI_Report.Report_RO.resources
+B:\Projects\WMS\WMS 0910218\WMS\WMS\obj\Debug\WMS.UI_RO.ROApproved_frm.resources
+B:\Projects\WMS\WMS 0910218\WMS\WMS\obj\Debug\WMS.UI_RO.ROEndorse_frm.resources
+B:\Projects\WMS\WMS 0910218\WMS\WMS\obj\Debug\WMS.UI_RO.ROPrep_frm.resources
+B:\Projects\WMS\WMS 0910218\WMS\WMS\obj\Debug\WMS.UI_RO.RORecommend_frm.resources
+B:\Projects\WMS\WMS 0910218\WMS\WMS\obj\Debug\WMS.UI_RR.ReceivingReport_frm.resources
+B:\Projects\WMS\WMS 0910218\WMS\WMS\obj\Debug\WMS.AccessRight_frm.resources
+B:\Projects\WMS\WMS 0910218\WMS\WMS\obj\Debug\WMS.Branch_frm.resources
+B:\Projects\WMS\WMS 0910218\WMS\WMS\obj\Debug\WMS.CanvassAppr_frm.resources
+B:\Projects\WMS\WMS 0910218\WMS\WMS\obj\Debug\WMS.CanvassEnd_frm.resources
+B:\Projects\WMS\WMS 0910218\WMS\WMS\obj\Debug\WMS.CanvassPrep_frm.resources
+B:\Projects\WMS\WMS 0910218\WMS\WMS\obj\Debug\WMS.COA_frm.resources
+B:\Projects\WMS\WMS 0910218\WMS\WMS\obj\Debug\Uploading.UI.Construction.resources
+B:\Projects\WMS\WMS 0910218\WMS\WMS\obj\Debug\WMS.Department_frm.resources
+B:\Projects\WMS\WMS 0910218\WMS\WMS\obj\Debug\WMS.items_frm.resources
+B:\Projects\WMS\WMS 0910218\WMS\WMS\obj\Debug\WMS.POApproved_frm.resources
+B:\Projects\WMS\WMS 0910218\WMS\WMS\obj\Debug\WMS.POEndorse_frm.resources
+B:\Projects\WMS\WMS 0910218\WMS\WMS\obj\Debug\WMS.POPrep_frm.resources
+B:\Projects\WMS\WMS 0910218\WMS\WMS\obj\Debug\WMS.PORecomend_frm.resources
+B:\Projects\WMS\WMS 0910218\WMS\WMS\obj\Debug\WMS.Position_frm.resources
+B:\Projects\WMS\WMS 0910218\WMS\WMS\obj\Debug\WMS.Supplier_frm.resources
+B:\Projects\WMS\WMS 0910218\WMS\WMS\obj\Debug\WMS.User_frm.resources
+B:\Projects\WMS\WMS 0910218\WMS\WMS\obj\Debug\Uploading.UI.View.resources
+B:\Projects\WMS\WMS 0910218\WMS\WMS\obj\Debug\Uploading.UI.ViewConstruction.resources
+B:\Projects\WMS\WMS 0910218\WMS\WMS\obj\Debug\WMS.UI_Tools.View_frm.resources
+B:\Projects\WMS\WMS 0910218\WMS\WMS\obj\Debug\WMS.WMS_Login.resources
+B:\Projects\WMS\WMS 0910218\WMS\WMS\obj\Debug\WMS.WMS_Main.resources
+B:\Projects\WMS\WMS 0910218\WMS\WMS\obj\Debug\WMS.Properties.Resources.resources
+B:\Projects\WMS\WMS 0910218\WMS\WMS\obj\Debug\WMS.WMS_security.resources
+B:\Projects\WMS\WMS 0910218\WMS\WMS\obj\Debug\WMS.csproj.GenerateResource.Cache
+B:\Projects\WMS\WMS 0910218\WMS\WMS\obj\Debug\RdlCompile.cache
+B:\Projects\WMS\WMS 0910218\WMS\WMS\obj\Debug\RdlCompile.compiled
+B:\Projects\WMS\WMS 0910218\WMS\WMS\bin\Debug\WMS.exe.manifest
+B:\Projects\WMS\WMS 0910218\WMS\WMS\bin\Debug\WMS.application
+B:\Projects\WMS\WMS 0910218\WMS\WMS\bin\Debug\WMS.exe
+B:\Projects\WMS\WMS 0910218\WMS\WMS\bin\Debug\WMS.pdb
+B:\Projects\WMS\WMS 0910218\WMS\WMS\obj\Debug\WMS.exe.manifest
+B:\Projects\WMS\WMS 0910218\WMS\WMS\obj\Debug\WMS.application
+B:\Projects\WMS\WMS\WMS\WMS\bin\Debug\WMS.exe.config
+B:\Projects\WMS\WMS\WMS\WMS\obj\Debug\WMS.exe
+B:\Projects\WMS\WMS\WMS\WMS\obj\Debug\WMS.pdb
+B:\Projects\WMS\WMS\WMS\WMS\bin\Debug\WMS.exe.manifest
+B:\Projects\WMS\WMS\WMS\WMS\bin\Debug\WMS.application
+B:\Projects\WMS\WMS\WMS\WMS\bin\Debug\WMS.exe
+B:\Projects\WMS\WMS\WMS\WMS\bin\Debug\WMS.pdb
+B:\Projects\WMS\WMS\WMS\WMS\obj\Debug\WMS.csprojResolveAssemblyReference.cache
+B:\Projects\WMS\WMS\WMS\WMS\obj\Debug\WMS.UI_Accountability.Accountability_frm.resources
+B:\Projects\WMS\WMS\WMS\WMS\obj\Debug\Uploading.UI.Project_frm.resources
+B:\Projects\WMS\WMS\WMS\WMS\obj\Debug\Uploading.UI.Report.resources
+B:\Projects\WMS\WMS\WMS\WMS\obj\Debug\WMS.UI_Report.Report_frm.resources
+B:\Projects\WMS\WMS\WMS\WMS\obj\Debug\WMS.UI_Report.Report_frm1.resources
+B:\Projects\WMS\WMS\WMS\WMS\obj\Debug\WMS.UI_Report.Report_RO.resources
+B:\Projects\WMS\WMS\WMS\WMS\obj\Debug\WMS.UI_RO.ROApproved_frm.resources
+B:\Projects\WMS\WMS\WMS\WMS\obj\Debug\WMS.UI_RO.ROEndorse_frm.resources
+B:\Projects\WMS\WMS\WMS\WMS\obj\Debug\WMS.UI_RO.ROPrep_frm.resources
+B:\Projects\WMS\WMS\WMS\WMS\obj\Debug\WMS.UI_RO.RORecommend_frm.resources
+B:\Projects\WMS\WMS\WMS\WMS\obj\Debug\WMS.UI_RR.ReceivingReport_frm.resources
+B:\Projects\WMS\WMS\WMS\WMS\obj\Debug\WMS.AccessRight_frm.resources
+B:\Projects\WMS\WMS\WMS\WMS\obj\Debug\WMS.Branch_frm.resources
+B:\Projects\WMS\WMS\WMS\WMS\obj\Debug\WMS.CanvassAppr_frm.resources
+B:\Projects\WMS\WMS\WMS\WMS\obj\Debug\WMS.CanvassEnd_frm.resources
+B:\Projects\WMS\WMS\WMS\WMS\obj\Debug\WMS.CanvassPrep_frm.resources
+B:\Projects\WMS\WMS\WMS\WMS\obj\Debug\WMS.COA_frm.resources
+B:\Projects\WMS\WMS\WMS\WMS\obj\Debug\Uploading.UI.Construction.resources
+B:\Projects\WMS\WMS\WMS\WMS\obj\Debug\WMS.Department_frm.resources
+B:\Projects\WMS\WMS\WMS\WMS\obj\Debug\WMS.items_frm.resources
+B:\Projects\WMS\WMS\WMS\WMS\obj\Debug\WMS.POApproved_frm.resources
+B:\Projects\WMS\WMS\WMS\WMS\obj\Debug\WMS.POEndorse_frm.resources
+B:\Projects\WMS\WMS\WMS\WMS\obj\Debug\WMS.POPrep_frm.resources
+B:\Projects\WMS\WMS\WMS\WMS\obj\Debug\WMS.PORecomend_frm.resources
+B:\Projects\WMS\WMS\WMS\WMS\obj\Debug\WMS.Position_frm.resources
+B:\Projects\WMS\WMS\WMS\WMS\obj\Debug\WMS.Supplier_frm.resources
+B:\Projects\WMS\WMS\WMS\WMS\obj\Debug\WMS.User_frm.resources
+B:\Projects\WMS\WMS\WMS\WMS\obj\Debug\Uploading.UI.View.resources
+B:\Projects\WMS\WMS\WMS\WMS\obj\Debug\Uploading.UI.ViewConstruction.resources
+B:\Projects\WMS\WMS\WMS\WMS\obj\Debug\WMS.UI_Tools.View_frm.resources
+B:\Projects\WMS\WMS\WMS\WMS\obj\Debug\WMS.WMS_Login.resources
+B:\Projects\WMS\WMS\WMS\WMS\obj\Debug\WMS.WMS_Main.resources
+B:\Projects\WMS\WMS\WMS\WMS\obj\Debug\WMS.Properties.Resources.resources
+B:\Projects\WMS\WMS\WMS\WMS\obj\Debug\WMS.WMS_security.resources
+B:\Projects\WMS\WMS\WMS\WMS\obj\Debug\WMS.csproj.GenerateResource.Cache
+B:\Projects\WMS\WMS\WMS\WMS\obj\Debug\RdlCompile.cache
+B:\Projects\WMS\WMS\WMS\WMS\obj\Debug\RdlCompile.compiled
+B:\Projects\WMS\WMS\WMS\WMS\obj\Debug\WMS.exe.manifest
+B:\Projects\WMS\WMS\WMS\WMS\obj\Debug\WMS.application
+B:\Projects\WMS\WMS\WMS\WMS\obj\Debug\WMS.UI_MRIS.MRIS_Prep.resources
+B:\Projects\WMS\WMS\WMS\WMS\obj\Debug\WMS.UI_RI.RI_frm.resources
+E:\2019\WMS\NEW MWS 01092019\WMS Project\WMS\WMS\WMS\bin\Debug\WMS.exe.config
+E:\2019\WMS\NEW MWS 01092019\WMS Project\WMS\WMS\WMS\obj\Debug\WMS.exe
+E:\2019\WMS\NEW MWS 01092019\WMS Project\WMS\WMS\WMS\obj\Debug\WMS.pdb
+E:\2019\WMS\NEW MWS 01092019\WMS Project\WMS\WMS\WMS\bin\Debug\WMS.exe.manifest
+E:\2019\WMS\NEW MWS 01092019\WMS Project\WMS\WMS\WMS\bin\Debug\WMS.application
+E:\2019\WMS\NEW MWS 01092019\WMS Project\WMS\WMS\WMS\bin\Debug\WMS.exe
+E:\2019\WMS\NEW MWS 01092019\WMS Project\WMS\WMS\WMS\bin\Debug\WMS.pdb
+E:\2019\WMS\NEW MWS 01092019\WMS Project\WMS\WMS\WMS\obj\Debug\WMS.csprojResolveAssemblyReference.cache
+E:\2019\WMS\NEW MWS 01092019\WMS Project\WMS\WMS\WMS\obj\Debug\WMS.UI_Accountability.Accountability_frm.resources
+E:\2019\WMS\NEW MWS 01092019\WMS Project\WMS\WMS\WMS\obj\Debug\WMS.UI_MRIS.MRIS_Prep.resources
+E:\2019\WMS\NEW MWS 01092019\WMS Project\WMS\WMS\WMS\obj\Debug\Uploading.UI.Project_frm.resources
+E:\2019\WMS\NEW MWS 01092019\WMS Project\WMS\WMS\WMS\obj\Debug\Uploading.UI.Report.resources
+E:\2019\WMS\NEW MWS 01092019\WMS Project\WMS\WMS\WMS\obj\Debug\WMS.UI_Report.Report_frm.resources
+E:\2019\WMS\NEW MWS 01092019\WMS Project\WMS\WMS\WMS\obj\Debug\WMS.UI_Report.Report_frm1.resources
+E:\2019\WMS\NEW MWS 01092019\WMS Project\WMS\WMS\WMS\obj\Debug\WMS.UI_Report.Report_RO.resources
+E:\2019\WMS\NEW MWS 01092019\WMS Project\WMS\WMS\WMS\obj\Debug\WMS.UI_RI.RI_frm.resources
+E:\2019\WMS\NEW MWS 01092019\WMS Project\WMS\WMS\WMS\obj\Debug\WMS.UI_RO.ROApproved_frm.resources
+E:\2019\WMS\NEW MWS 01092019\WMS Project\WMS\WMS\WMS\obj\Debug\WMS.UI_RO.ROEndorse_frm.resources
+E:\2019\WMS\NEW MWS 01092019\WMS Project\WMS\WMS\WMS\obj\Debug\WMS.UI_RO.ROPrep_frm.resources
+E:\2019\WMS\NEW MWS 01092019\WMS Project\WMS\WMS\WMS\obj\Debug\WMS.UI_RO.RORecommend_frm.resources
+E:\2019\WMS\NEW MWS 01092019\WMS Project\WMS\WMS\WMS\obj\Debug\WMS.UI_RR.ReceivingReport_frm.resources
+E:\2019\WMS\NEW MWS 01092019\WMS Project\WMS\WMS\WMS\obj\Debug\WMS.AccessRight_frm.resources
+E:\2019\WMS\NEW MWS 01092019\WMS Project\WMS\WMS\WMS\obj\Debug\WMS.Branch_frm.resources
+E:\2019\WMS\NEW MWS 01092019\WMS Project\WMS\WMS\WMS\obj\Debug\WMS.CanvassAppr_frm.resources
+E:\2019\WMS\NEW MWS 01092019\WMS Project\WMS\WMS\WMS\obj\Debug\WMS.CanvassEnd_frm.resources
+E:\2019\WMS\NEW MWS 01092019\WMS Project\WMS\WMS\WMS\obj\Debug\WMS.CanvassPrep_frm.resources
+E:\2019\WMS\NEW MWS 01092019\WMS Project\WMS\WMS\WMS\obj\Debug\WMS.COA_frm.resources
+E:\2019\WMS\NEW MWS 01092019\WMS Project\WMS\WMS\WMS\obj\Debug\Uploading.UI.Construction.resources
+E:\2019\WMS\NEW MWS 01092019\WMS Project\WMS\WMS\WMS\obj\Debug\WMS.Department_frm.resources
+E:\2019\WMS\NEW MWS 01092019\WMS Project\WMS\WMS\WMS\obj\Debug\WMS.items_frm.resources
+E:\2019\WMS\NEW MWS 01092019\WMS Project\WMS\WMS\WMS\obj\Debug\WMS.POApproved_frm.resources
+E:\2019\WMS\NEW MWS 01092019\WMS Project\WMS\WMS\WMS\obj\Debug\WMS.POEndorse_frm.resources
+E:\2019\WMS\NEW MWS 01092019\WMS Project\WMS\WMS\WMS\obj\Debug\WMS.POPrep_frm.resources
+E:\2019\WMS\NEW MWS 01092019\WMS Project\WMS\WMS\WMS\obj\Debug\WMS.PORecomend_frm.resources
+E:\2019\WMS\NEW MWS 01092019\WMS Project\WMS\WMS\WMS\obj\Debug\WMS.Position_frm.resources
+E:\2019\WMS\NEW MWS 01092019\WMS Project\WMS\WMS\WMS\obj\Debug\WMS.Supplier_frm.resources
+E:\2019\WMS\NEW MWS 01092019\WMS Project\WMS\WMS\WMS\obj\Debug\WMS.User_frm.resources
+E:\2019\WMS\NEW MWS 01092019\WMS Project\WMS\WMS\WMS\obj\Debug\Uploading.UI.View.resources
+E:\2019\WMS\NEW MWS 01092019\WMS Project\WMS\WMS\WMS\obj\Debug\Uploading.UI.ViewConstruction.resources
+E:\2019\WMS\NEW MWS 01092019\WMS Project\WMS\WMS\WMS\obj\Debug\WMS.UI_Tools.View_frm.resources
+E:\2019\WMS\NEW MWS 01092019\WMS Project\WMS\WMS\WMS\obj\Debug\WMS.WMS_Login.resources
+E:\2019\WMS\NEW MWS 01092019\WMS Project\WMS\WMS\WMS\obj\Debug\WMS.WMS_Main.resources
+E:\2019\WMS\NEW MWS 01092019\WMS Project\WMS\WMS\WMS\obj\Debug\WMS.Properties.Resources.resources
+E:\2019\WMS\NEW MWS 01092019\WMS Project\WMS\WMS\WMS\obj\Debug\WMS.WMS_security.resources
+E:\2019\WMS\NEW MWS 01092019\WMS Project\WMS\WMS\WMS\obj\Debug\WMS.csproj.GenerateResource.Cache
+E:\2019\WMS\NEW MWS 01092019\WMS Project\WMS\WMS\WMS\obj\Debug\RdlCompile.cache
+E:\2019\WMS\NEW MWS 01092019\WMS Project\WMS\WMS\WMS\obj\Debug\RdlCompile.compiled
+E:\2019\WMS\NEW MWS 01092019\WMS Project\WMS\WMS\WMS\obj\Debug\WMS.exe.manifest
+E:\2019\WMS\NEW MWS 01092019\WMS Project\WMS\WMS\WMS\obj\Debug\WMS.application
+C:\Users\Ren Ren Montilla\Documents\Projects\WMS 01312019\WMS 01312019\SYSTEM\WMS\WMS\obj\Debug\WMS.UI_Accountability.Accountability_frm.resources
+C:\Users\Ren Ren Montilla\Documents\Projects\WMS 01312019\WMS 01312019\SYSTEM\WMS\WMS\obj\Debug\WMS.UI_MRIS.MRIS_Prep.resources
+C:\Users\Ren Ren Montilla\Documents\Projects\WMS 01312019\WMS 01312019\SYSTEM\WMS\WMS\obj\Debug\Uploading.UI.Project_frm.resources
+C:\Users\Ren Ren Montilla\Documents\Projects\WMS 01312019\WMS 01312019\SYSTEM\WMS\WMS\obj\Debug\Uploading.UI.Report.resources
+C:\Users\Ren Ren Montilla\Documents\Projects\WMS 01312019\WMS 01312019\SYSTEM\WMS\WMS\obj\Debug\WMS.UI_Report.Report_frm.resources
+C:\Users\Ren Ren Montilla\Documents\Projects\WMS 01312019\WMS 01312019\SYSTEM\WMS\WMS\obj\Debug\WMS.UI_Report.Report_frm1.resources
+C:\Users\Ren Ren Montilla\Documents\Projects\WMS 01312019\WMS 01312019\SYSTEM\WMS\WMS\obj\Debug\WMS.UI_Report.Report_RO.resources
+C:\Users\Ren Ren Montilla\Documents\Projects\WMS 01312019\WMS 01312019\SYSTEM\WMS\WMS\obj\Debug\WMS.UI_RI.RI_frm.resources
+C:\Users\Ren Ren Montilla\Documents\Projects\WMS 01312019\WMS 01312019\SYSTEM\WMS\WMS\obj\Debug\WMS.UI_RO.ROApproved_frm.resources
+C:\Users\Ren Ren Montilla\Documents\Projects\WMS 01312019\WMS 01312019\SYSTEM\WMS\WMS\obj\Debug\WMS.UI_RO.ROEndorse_frm.resources
+C:\Users\Ren Ren Montilla\Documents\Projects\WMS 01312019\WMS 01312019\SYSTEM\WMS\WMS\obj\Debug\WMS.UI_RO.ROPrep_frm.resources
+C:\Users\Ren Ren Montilla\Documents\Projects\WMS 01312019\WMS 01312019\SYSTEM\WMS\WMS\obj\Debug\WMS.UI_RO.RORecommend_frm.resources
+C:\Users\Ren Ren Montilla\Documents\Projects\WMS 01312019\WMS 01312019\SYSTEM\WMS\WMS\obj\Debug\WMS.UI_RR.ReceivingReport_frm.resources
+C:\Users\Ren Ren Montilla\Documents\Projects\WMS 01312019\WMS 01312019\SYSTEM\WMS\WMS\obj\Debug\WMS.AccessRight_frm.resources
+C:\Users\Ren Ren Montilla\Documents\Projects\WMS 01312019\WMS 01312019\SYSTEM\WMS\WMS\obj\Debug\WMS.Branch_frm.resources
+C:\Users\Ren Ren Montilla\Documents\Projects\WMS 01312019\WMS 01312019\SYSTEM\WMS\WMS\obj\Debug\WMS.CanvassAppr_frm.resources
+C:\Users\Ren Ren Montilla\Documents\Projects\WMS 01312019\WMS 01312019\SYSTEM\WMS\WMS\obj\Debug\WMS.CanvassEnd_frm.resources
+C:\Users\Ren Ren Montilla\Documents\Projects\WMS 01312019\WMS 01312019\SYSTEM\WMS\WMS\obj\Debug\WMS.CanvassPrep_frm.resources
+C:\Users\Ren Ren Montilla\Documents\Projects\WMS 01312019\WMS 01312019\SYSTEM\WMS\WMS\obj\Debug\WMS.COA_frm.resources
+C:\Users\Ren Ren Montilla\Documents\Projects\WMS 01312019\WMS 01312019\SYSTEM\WMS\WMS\obj\Debug\Uploading.UI.Construction.resources
+C:\Users\Ren Ren Montilla\Documents\Projects\WMS 01312019\WMS 01312019\SYSTEM\WMS\WMS\obj\Debug\WMS.Department_frm.resources
+C:\Users\Ren Ren Montilla\Documents\Projects\WMS 01312019\WMS 01312019\SYSTEM\WMS\WMS\obj\Debug\WMS.items_frm.resources
+C:\Users\Ren Ren Montilla\Documents\Projects\WMS 01312019\WMS 01312019\SYSTEM\WMS\WMS\obj\Debug\WMS.POApproved_frm.resources
+C:\Users\Ren Ren Montilla\Documents\Projects\WMS 01312019\WMS 01312019\SYSTEM\WMS\WMS\obj\Debug\WMS.POEndorse_frm.resources
+C:\Users\Ren Ren Montilla\Documents\Projects\WMS 01312019\WMS 01312019\SYSTEM\WMS\WMS\obj\Debug\WMS.POPrep_frm.resources
+C:\Users\Ren Ren Montilla\Documents\Projects\WMS 01312019\WMS 01312019\SYSTEM\WMS\WMS\obj\Debug\WMS.PORecomend_frm.resources
+C:\Users\Ren Ren Montilla\Documents\Projects\WMS 01312019\WMS 01312019\SYSTEM\WMS\WMS\obj\Debug\WMS.Position_frm.resources
+C:\Users\Ren Ren Montilla\Documents\Projects\WMS 01312019\WMS 01312019\SYSTEM\WMS\WMS\obj\Debug\WMS.Supplier_frm.resources
+C:\Users\Ren Ren Montilla\Documents\Projects\WMS 01312019\WMS 01312019\SYSTEM\WMS\WMS\obj\Debug\WMS.User_frm.resources
+C:\Users\Ren Ren Montilla\Documents\Projects\WMS 01312019\WMS 01312019\SYSTEM\WMS\WMS\obj\Debug\Uploading.UI.View.resources
+C:\Users\Ren Ren Montilla\Documents\Projects\WMS 01312019\WMS 01312019\SYSTEM\WMS\WMS\obj\Debug\Uploading.UI.ViewConstruction.resources
+C:\Users\Ren Ren Montilla\Documents\Projects\WMS 01312019\WMS 01312019\SYSTEM\WMS\WMS\obj\Debug\WMS.UI_Tools.View_frm.resources
+C:\Users\Ren Ren Montilla\Documents\Projects\WMS 01312019\WMS 01312019\SYSTEM\WMS\WMS\obj\Debug\WMS.WMS_Login.resources
+C:\Users\Ren Ren Montilla\Documents\Projects\WMS 01312019\WMS 01312019\SYSTEM\WMS\WMS\obj\Debug\WMS.WMS_Main.resources
+C:\Users\Ren Ren Montilla\Documents\Projects\WMS 01312019\WMS 01312019\SYSTEM\WMS\WMS\obj\Debug\WMS.Properties.Resources.resources
+C:\Users\Ren Ren Montilla\Documents\Projects\WMS 01312019\WMS 01312019\SYSTEM\WMS\WMS\obj\Debug\WMS.WMS_security.resources
+C:\Users\Ren Ren Montilla\Documents\Projects\WMS 01312019\WMS 01312019\SYSTEM\WMS\WMS\obj\Debug\WMS.csproj.GenerateResource.cache
+C:\Users\Ren Ren Montilla\Documents\Projects\WMS 01312019\WMS 01312019\SYSTEM\WMS\WMS\obj\Debug\WMS.csproj.CoreCompileInputs.cache
+C:\Users\Ren Ren Montilla\Documents\Projects\WMS 01312019\WMS 01312019\SYSTEM\WMS\WMS\bin\Debug\WMS.exe.config
+C:\Users\Ren Ren Montilla\Documents\Projects\WMS 01312019\WMS 01312019\SYSTEM\WMS\WMS\bin\Debug\WMS.exe.manifest
+C:\Users\Ren Ren Montilla\Documents\Projects\WMS 01312019\WMS 01312019\SYSTEM\WMS\WMS\bin\Debug\WMS.application
+C:\Users\Ren Ren Montilla\Documents\Projects\WMS 01312019\WMS 01312019\SYSTEM\WMS\WMS\bin\Debug\WMS.exe
+C:\Users\Ren Ren Montilla\Documents\Projects\WMS 01312019\WMS 01312019\SYSTEM\WMS\WMS\bin\Debug\WMS.pdb
+C:\Users\Ren Ren Montilla\Documents\Projects\WMS 01312019\WMS 01312019\SYSTEM\WMS\WMS\bin\Debug\Microsoft.ReportViewer.Common.dll
+C:\Users\Ren Ren Montilla\Documents\Projects\WMS 01312019\WMS 01312019\SYSTEM\WMS\WMS\bin\Debug\Microsoft.ReportViewer.ProcessingObjectModel.DLL
+C:\Users\Ren Ren Montilla\Documents\Projects\WMS 01312019\WMS 01312019\SYSTEM\WMS\WMS\bin\Debug\Microsoft.ReportViewer.WinForms.DLL
+C:\Users\Ren Ren Montilla\Documents\Projects\WMS 01312019\WMS 01312019\SYSTEM\WMS\WMS\bin\Debug\Microsoft.SqlServer.Types.dll
+C:\Users\Ren Ren Montilla\Documents\Projects\WMS 01312019\WMS 01312019\SYSTEM\WMS\WMS\obj\Debug\WMS.exe.manifest
+C:\Users\Ren Ren Montilla\Documents\Projects\WMS 01312019\WMS 01312019\SYSTEM\WMS\WMS\obj\Debug\WMS.application
+C:\Users\Ren Ren Montilla\Documents\Projects\WMS 01312019\WMS 01312019\SYSTEM\WMS\WMS\obj\Debug\WMS.csproj.CopyComplete
+C:\Users\Ren Ren Montilla\Documents\Projects\WMS 01312019\WMS 01312019\SYSTEM\WMS\WMS\obj\Debug\WMS.exe
+C:\Users\Ren Ren Montilla\Documents\Projects\WMS 01312019\WMS 01312019\SYSTEM\WMS\WMS\obj\Debug\WMS.pdb
+C:\Projects\WMS 01312019\WMS 01312019\SYSTEM\WMS\WMS\bin\Debug\WMS.exe.config
+C:\Projects\WMS 01312019\WMS 01312019\SYSTEM\WMS\WMS\bin\Debug\WMS.exe.manifest
+C:\Projects\WMS 01312019\WMS 01312019\SYSTEM\WMS\WMS\bin\Debug\WMS.application
+C:\Projects\WMS 01312019\WMS 01312019\SYSTEM\WMS\WMS\bin\Debug\WMS.exe
+C:\Projects\WMS 01312019\WMS 01312019\SYSTEM\WMS\WMS\bin\Debug\WMS.pdb
+C:\Projects\WMS 01312019\WMS 01312019\SYSTEM\WMS\WMS\bin\Debug\Microsoft.ReportViewer.Common.dll
+C:\Projects\WMS 01312019\WMS 01312019\SYSTEM\WMS\WMS\bin\Debug\Microsoft.ReportViewer.ProcessingObjectModel.DLL
+C:\Projects\WMS 01312019\WMS 01312019\SYSTEM\WMS\WMS\bin\Debug\Microsoft.ReportViewer.WinForms.DLL
+C:\Projects\WMS 01312019\WMS 01312019\SYSTEM\WMS\WMS\bin\Debug\Microsoft.SqlServer.Types.dll
+C:\Projects\WMS 01312019\WMS 01312019\SYSTEM\WMS\WMS\obj\Debug\WMS.csprojAssemblyReference.cache
+C:\Projects\WMS 01312019\WMS 01312019\SYSTEM\WMS\WMS\obj\Debug\WMS.UI_Accountability.Accountability_frm.resources
+C:\Projects\WMS 01312019\WMS 01312019\SYSTEM\WMS\WMS\obj\Debug\WMS.UI_MRIS.MRIS_Prep.resources
+C:\Projects\WMS 01312019\WMS 01312019\SYSTEM\WMS\WMS\obj\Debug\Uploading.UI.Project_frm.resources
+C:\Projects\WMS 01312019\WMS 01312019\SYSTEM\WMS\WMS\obj\Debug\Uploading.UI.Report.resources
+C:\Projects\WMS 01312019\WMS 01312019\SYSTEM\WMS\WMS\obj\Debug\WMS.UI_Report.Report_frm.resources
+C:\Projects\WMS 01312019\WMS 01312019\SYSTEM\WMS\WMS\obj\Debug\WMS.UI_Report.Report_frm1.resources
+C:\Projects\WMS 01312019\WMS 01312019\SYSTEM\WMS\WMS\obj\Debug\WMS.UI_Report.Report_RO.resources
+C:\Projects\WMS 01312019\WMS 01312019\SYSTEM\WMS\WMS\obj\Debug\WMS.UI_RI.RI_frm.resources
+C:\Projects\WMS 01312019\WMS 01312019\SYSTEM\WMS\WMS\obj\Debug\WMS.UI_RO.ROApproved_frm.resources
+C:\Projects\WMS 01312019\WMS 01312019\SYSTEM\WMS\WMS\obj\Debug\WMS.UI_RO.ROEndorse_frm.resources
+C:\Projects\WMS 01312019\WMS 01312019\SYSTEM\WMS\WMS\obj\Debug\WMS.UI_RO.ROPrep_frm.resources
+C:\Projects\WMS 01312019\WMS 01312019\SYSTEM\WMS\WMS\obj\Debug\WMS.UI_RO.RORecommend_frm.resources
+C:\Projects\WMS 01312019\WMS 01312019\SYSTEM\WMS\WMS\obj\Debug\WMS.UI_RR.ReceivingReport_frm.resources
+C:\Projects\WMS 01312019\WMS 01312019\SYSTEM\WMS\WMS\obj\Debug\WMS.AccessRight_frm.resources
+C:\Projects\WMS 01312019\WMS 01312019\SYSTEM\WMS\WMS\obj\Debug\WMS.Branch_frm.resources
+C:\Projects\WMS 01312019\WMS 01312019\SYSTEM\WMS\WMS\obj\Debug\WMS.CanvassAppr_frm.resources
+C:\Projects\WMS 01312019\WMS 01312019\SYSTEM\WMS\WMS\obj\Debug\WMS.CanvassEnd_frm.resources
+C:\Projects\WMS 01312019\WMS 01312019\SYSTEM\WMS\WMS\obj\Debug\WMS.CanvassPrep_frm.resources
+C:\Projects\WMS 01312019\WMS 01312019\SYSTEM\WMS\WMS\obj\Debug\WMS.COA_frm.resources
+C:\Projects\WMS 01312019\WMS 01312019\SYSTEM\WMS\WMS\obj\Debug\Uploading.UI.Construction.resources
+C:\Projects\WMS 01312019\WMS 01312019\SYSTEM\WMS\WMS\obj\Debug\WMS.Department_frm.resources
+C:\Projects\WMS 01312019\WMS 01312019\SYSTEM\WMS\WMS\obj\Debug\WMS.items_frm.resources
+C:\Projects\WMS 01312019\WMS 01312019\SYSTEM\WMS\WMS\obj\Debug\WMS.POApproved_frm.resources
+C:\Projects\WMS 01312019\WMS 01312019\SYSTEM\WMS\WMS\obj\Debug\WMS.POEndorse_frm.resources
+C:\Projects\WMS 01312019\WMS 01312019\SYSTEM\WMS\WMS\obj\Debug\WMS.POPrep_frm.resources
+C:\Projects\WMS 01312019\WMS 01312019\SYSTEM\WMS\WMS\obj\Debug\WMS.PORecomend_frm.resources
+C:\Projects\WMS 01312019\WMS 01312019\SYSTEM\WMS\WMS\obj\Debug\WMS.Position_frm.resources
+C:\Projects\WMS 01312019\WMS 01312019\SYSTEM\WMS\WMS\obj\Debug\WMS.Signatory_frm.resources
+C:\Projects\WMS 01312019\WMS 01312019\SYSTEM\WMS\WMS\obj\Debug\WMS.Supplier_frm.resources
+C:\Projects\WMS 01312019\WMS 01312019\SYSTEM\WMS\WMS\obj\Debug\WMS.User_frm.resources
+C:\Projects\WMS 01312019\WMS 01312019\SYSTEM\WMS\WMS\obj\Debug\Uploading.UI.View.resources
+C:\Projects\WMS 01312019\WMS 01312019\SYSTEM\WMS\WMS\obj\Debug\Uploading.UI.ViewConstruction.resources
+C:\Projects\WMS 01312019\WMS 01312019\SYSTEM\WMS\WMS\obj\Debug\WMS.UI_Tools.View_frm.resources
+C:\Projects\WMS 01312019\WMS 01312019\SYSTEM\WMS\WMS\obj\Debug\WMS.WMS_Login.resources
+C:\Projects\WMS 01312019\WMS 01312019\SYSTEM\WMS\WMS\obj\Debug\WMS.WMS_Main.resources
+C:\Projects\WMS 01312019\WMS 01312019\SYSTEM\WMS\WMS\obj\Debug\WMS.Properties.Resources.resources
+C:\Projects\WMS 01312019\WMS 01312019\SYSTEM\WMS\WMS\obj\Debug\WMS.WMS_security.resources
+C:\Projects\WMS 01312019\WMS 01312019\SYSTEM\WMS\WMS\obj\Debug\WMS.csproj.GenerateResource.cache
+C:\Projects\WMS 01312019\WMS 01312019\SYSTEM\WMS\WMS\obj\Debug\WMS.csproj.CoreCompileInputs.cache
+C:\Projects\WMS 01312019\WMS 01312019\SYSTEM\WMS\WMS\obj\Debug\WMS.exe.manifest
+C:\Projects\WMS 01312019\WMS 01312019\SYSTEM\WMS\WMS\obj\Debug\WMS.application
+C:\Projects\WMS 01312019\WMS 01312019\SYSTEM\WMS\WMS\obj\Debug\WMS.csproj.CopyComplete
+C:\Projects\WMS 01312019\WMS 01312019\SYSTEM\WMS\WMS\obj\Debug\WMS.exe
+C:\Projects\WMS 01312019\WMS 01312019\SYSTEM\WMS\WMS\obj\Debug\WMS.pdb
+C:\Projects\WMS 01312019\WMS 01312019\SYSTEM\WMS\WMS\bin\Debug\GlobalObject.dll
+C:\Projects\WMS 01312019\WMS 01312019\SYSTEM\WMS\WMS\bin\Debug\GlobalObject.pdb

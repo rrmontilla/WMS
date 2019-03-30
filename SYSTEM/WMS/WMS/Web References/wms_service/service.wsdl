@@ -1,0 +1,4197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tempuri.org/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:element name="Select_Canvass_Approved">
+        <s:complexType />
+      </s:element>
+      <s:element name="Select_Canvass_ApprovedResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Select_Canvass_ApprovedResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SelectSummaryReport">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="title" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="tdt1" type="s:dateTime" />
+            <s:element minOccurs="1" maxOccurs="1" name="tdt2" type="s:dateTime" />
+            <s:element minOccurs="0" maxOccurs="1" name="id" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SelectSummaryReportResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="SelectSummaryReportResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="InsertPurchaseOrder">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="xml1" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="xml2" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="InsertPurchaseOrderResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="InsertPurchaseOrderResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Get_PO">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="userID" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Get_POResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Get_POResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Get_Pending_PO">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="userID" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Get_Pending_POResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Get_Pending_POResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Get_PO_for_Noted">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="userID" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Get_PO_for_NotedResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Get_PO_for_NotedResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Get_PO_for_Approved">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="userID" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Get_PO_for_ApprovedResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Get_PO_for_ApprovedResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Get_PODetailsAll">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="POID" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Get_PODetailsAllResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Get_PODetailsAllResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Update_PO_Noted">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="POID" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="UserId" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Update_PO_NotedResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Update_PO_NotedResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Update_PO_Approved">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="POID" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="UserId" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Update_PO_ApprovedResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Update_PO_ApprovedResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="InsertMRIS">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="xml1" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="xml2" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="InsertMRISResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="InsertMRISResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Get_MRIS">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="userID" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="type" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Get_MRISResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Get_MRISResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Get_MRISDetails">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="MRISID" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Get_MRISDetailsResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Get_MRISDetailsResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Update_MRIS">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="MRISID" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="type" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Update_MRISResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Update_MRISResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Select_PO_Approved">
+        <s:complexType />
+      </s:element>
+      <s:element name="Select_PO_ApprovedResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Select_PO_ApprovedResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Get_Pending_RR">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="userID" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Get_Pending_RRResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Get_Pending_RRResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="InsertRI">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="xml1" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="xml2" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="InsertRIResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="InsertRIResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Get_RI">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="userID" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="type" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Get_RIResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Get_RIResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Get_RIDetails">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="RIID" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Get_RIDetailsResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Get_RIDetailsResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Update_RI">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="RIID" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="type" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Update_RIResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Update_RIResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="InsertReceivingReport">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="xml1" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="xml2" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="InsertReceivingReportResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="InsertReceivingReportResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="InsertRRDetails">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="xml" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="RRID" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="InsertRRDetailsResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="InsertRRDetailsResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Get_RR_for_Noted">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="userID" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Get_RR_for_NotedResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Get_RR_for_NotedResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Update_RR_Noted">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="RRID" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="UserId" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Update_RR_NotedResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Update_RR_NotedResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Update_RR_Approved">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="RRID" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="UserId" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Update_RR_ApprovedResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Update_RR_ApprovedResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Get_RR_for_Approved">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="userID" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Get_RR_for_ApprovedResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Get_RR_for_ApprovedResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetSignatory">
+        <s:complexType />
+      </s:element>
+      <s:element name="GetSignatoryResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetSignatoryResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetSignatoryByUserId">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="pUserId" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="pTransactionType" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pSignatoryType" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetSignatoryByUserIdResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetSignatoryByUserIdResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="InsertSignatory">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="pUserId" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="pTransType" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pSignType" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="InsertSignatoryResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="InsertSignatoryResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdateSignatory">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="pSignId" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="pUserId" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="pTransType" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pSignType" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdateSignatoryResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="UpdateSignatoryResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DeleteSignatory">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="pSignId" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DeleteSignatoryResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="DeleteSignatoryResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Version">
+        <s:complexType />
+      </s:element>
+      <s:element name="VersionResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="VersionResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="VerifyUserLogin">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="username" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="password" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="VerifyUserLoginResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="VerifyUserLoginResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SelectDepartment">
+        <s:complexType />
+      </s:element>
+      <s:element name="SelectDepartmentResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="SelectDepartmentResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="InsertDepartment">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="branchName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="status" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="InsertDepartmentResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="InsertDepartmentResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdateDepartment">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="id" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="status" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdateDepartmentResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="UpdateDepartmentResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SelectBranch">
+        <s:complexType />
+      </s:element>
+      <s:element name="SelectBranchResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="SelectBranchResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="InsertBranch">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="branchName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="status" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="InsertBranchResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="InsertBranchResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdateBranch">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="id" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="status" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdateBranchResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="UpdateBranchResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SelectPosition">
+        <s:complexType />
+      </s:element>
+      <s:element name="SelectPositionResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="SelectPositionResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="InsertPosition">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="branchName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="status" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="InsertPositionResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="InsertPositionResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdatePosition">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="id" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="status" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdatePositionResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="UpdatePositionResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="RegisterUserAccount">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="fName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="mName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="lName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="addr" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="city" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="mNumber" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="username" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="password" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="posID" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="depID" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="brID" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="signature" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="RegisterUserAccountResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="RegisterUserAccountResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SelectUserByUserName">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="username" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SelectUserByUserNameResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="SelectUserByUserNameResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SelectUserByUserID">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="userID" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SelectUserByUserIDResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="SelectUserByUserIDResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SelectAllUser">
+        <s:complexType />
+      </s:element>
+      <s:element name="SelectAllUserResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="SelectAllUserResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SelectAllUserV2">
+        <s:complexType />
+      </s:element>
+      <s:element name="SelectAllUserV2Response">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="SelectAllUserV2Result">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="InsertAccessModule">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Desc" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="InsertAccessModuleResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="InsertAccessModuleResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="InsertUserAccessRights">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="userID" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="ModuleID" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="InsertUserAccessRightsResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="InsertUserAccessRightsResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DeleteUserAccessRights">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="userID" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="ModuleID" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DeleteUserAccessRightsResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="DeleteUserAccessRightsResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SelectUserAccessModule">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="userID" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SelectUserAccessModuleResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="SelectUserAccessModuleResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdateUser">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="mobileNum" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="posID" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="deptID" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="brID" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="sign" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="id" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="username" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdateUserResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="UpdateUserResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdateUserPassword">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="NewPass" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="oldPass" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="id" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="username" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdateUserPasswordResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="UpdateUserPasswordResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="InsertSupplier">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="data" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="InsertSupplierResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="InsertSupplierResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="InsertAccounts">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="data" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="InsertAccountsResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="InsertAccountsResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="InsertItems">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="data" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="InsertItemsResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="InsertItemsResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SelectSupplier">
+        <s:complexType />
+      </s:element>
+      <s:element name="SelectSupplierResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="SelectSupplierResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdateSupplier">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="id" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="supplierCode" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="supplierCodeTag" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="supplierName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="businessAddress" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="tin" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="cellNumber" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="telNumber" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="contactPerson" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="productsAvailed" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pt" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="country" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="supplierCurrency" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdateSupplierResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="UpdateSupplierResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdateAccount">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="id" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="acode" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pcc" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="description" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="debitCredit" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="acodeid" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="sl" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="groupBy" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdateAccountResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="UpdateAccountResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SelectAllAccount">
+        <s:complexType />
+      </s:element>
+      <s:element name="SelectAllAccountResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="SelectAllAccountResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SelectAllItem">
+        <s:complexType />
+      </s:element>
+      <s:element name="SelectAllItemResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="SelectAllItemResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SelectItemPerID">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="id" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SelectItemPerIDResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="SelectItemPerIDResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdateItem">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="id" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="itemCode" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="itemCodeTag" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="itemName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="description" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="brand" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="unit" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="supplierName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="ssLevel" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="LTDelivery" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Inventory" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdateItemResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="UpdateItemResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="InsertRequestOrder">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="xml1" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="xml2" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="InsertRequestOrderResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="InsertRequestOrderResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Get_RO_Requestor">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="userID" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Get_RO_RequestorResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Get_RO_RequestorResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Print_Transaction">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="userID" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="RONum" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="title" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Print_TransactionResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Print_TransactionResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Get_RO_BY_RONumber">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ronum" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Get_RO_BY_RONumberResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Get_RO_BY_RONumberResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Get_RO_Details">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="requestOrderID" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Get_RO_DetailsResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Get_RO_DetailsResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Get_RO_Endorser">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="endorserID" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Get_RO_EndorserResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Get_RO_EndorserResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Get_RO_Recommenders">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="recomID" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Get_RO_RecommendersResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Get_RO_RecommendersResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Get_RO_Approver">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="ApprID" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Get_RO_ApproverResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Get_RO_ApproverResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Get_RO_ByRONumber">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="ROID" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Get_RO_ByRONumberResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Get_RO_ByRONumberResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="RO_UpdateForEndorse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ROID" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="pUserId" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="RO_UpdateForEndorseResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="RO_UpdateForEndorseResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="RO_UpdateForRecommend">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ROID" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="RO_UpdateForRecommendResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="RO_UpdateForRecommendResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="RO_UpdateForApproved">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ROID" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="pUserId" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="RO_UpdateForApprovedResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="RO_UpdateForApprovedResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Select_RO_Approve">
+        <s:complexType />
+      </s:element>
+      <s:element name="Select_RO_ApproveResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Select_RO_ApproveResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="InsertCanvass">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="xml1" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="xml2" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="InsertCanvassResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="InsertCanvassResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="InsertCanvassDetails">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="xml" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="canvassID" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="InsertCanvassDetailsResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="InsertCanvassDetailsResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Approve_CanvassItems">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="canID" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="ItemID" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="SupplierID" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Approve_CanvassItemsResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Approve_CanvassItemsResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Get_Canvass">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="userID" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Get_CanvassResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Get_CanvassResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Get_Canvass_for_Noted">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="userID" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Get_Canvass_for_NotedResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Get_Canvass_for_NotedResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Get_Canvass_for_Approved">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="userID" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Get_Canvass_for_ApprovedResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Get_Canvass_for_ApprovedResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Get_CanvassDetailsNotApproved">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="canvassID" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Get_CanvassDetailsNotApprovedResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Get_CanvassDetailsNotApprovedResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Get_CanvassDetailsApproved">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="canvassID" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Get_CanvassDetailsApprovedResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Get_CanvassDetailsApprovedResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Get_CanvassDetailsAll">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="canvassID" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Get_CanvassDetailsAllResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Get_CanvassDetailsAllResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Get_CanvassDetailsAll1">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="canvassID" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Get_CanvassDetailsAll1Response">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Get_CanvassDetailsAll1Result">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetAllItems">
+        <s:complexType />
+      </s:element>
+      <s:element name="GetAllItemsResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetAllItemsResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetAllData">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="title" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="ttype" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetAllDataResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetAllDataResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="InsertConstruction">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="data" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="InsertConstructionResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="InsertConstructionResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Update_Canvass_Noted">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="canvassID" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="UserId" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Update_Canvass_NotedResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Update_Canvass_NotedResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Update_Canvass_Approved">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="canvassID" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="UserId" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Update_Canvass_ApprovedResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Update_Canvass_ApprovedResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="Select_Canvass_ApprovedSoapIn">
+    <wsdl:part name="parameters" element="tns:Select_Canvass_Approved" />
+  </wsdl:message>
+  <wsdl:message name="Select_Canvass_ApprovedSoapOut">
+    <wsdl:part name="parameters" element="tns:Select_Canvass_ApprovedResponse" />
+  </wsdl:message>
+  <wsdl:message name="SelectSummaryReportSoapIn">
+    <wsdl:part name="parameters" element="tns:SelectSummaryReport" />
+  </wsdl:message>
+  <wsdl:message name="SelectSummaryReportSoapOut">
+    <wsdl:part name="parameters" element="tns:SelectSummaryReportResponse" />
+  </wsdl:message>
+  <wsdl:message name="InsertPurchaseOrderSoapIn">
+    <wsdl:part name="parameters" element="tns:InsertPurchaseOrder" />
+  </wsdl:message>
+  <wsdl:message name="InsertPurchaseOrderSoapOut">
+    <wsdl:part name="parameters" element="tns:InsertPurchaseOrderResponse" />
+  </wsdl:message>
+  <wsdl:message name="Get_POSoapIn">
+    <wsdl:part name="parameters" element="tns:Get_PO" />
+  </wsdl:message>
+  <wsdl:message name="Get_POSoapOut">
+    <wsdl:part name="parameters" element="tns:Get_POResponse" />
+  </wsdl:message>
+  <wsdl:message name="Get_Pending_POSoapIn">
+    <wsdl:part name="parameters" element="tns:Get_Pending_PO" />
+  </wsdl:message>
+  <wsdl:message name="Get_Pending_POSoapOut">
+    <wsdl:part name="parameters" element="tns:Get_Pending_POResponse" />
+  </wsdl:message>
+  <wsdl:message name="Get_PO_for_NotedSoapIn">
+    <wsdl:part name="parameters" element="tns:Get_PO_for_Noted" />
+  </wsdl:message>
+  <wsdl:message name="Get_PO_for_NotedSoapOut">
+    <wsdl:part name="parameters" element="tns:Get_PO_for_NotedResponse" />
+  </wsdl:message>
+  <wsdl:message name="Get_PO_for_ApprovedSoapIn">
+    <wsdl:part name="parameters" element="tns:Get_PO_for_Approved" />
+  </wsdl:message>
+  <wsdl:message name="Get_PO_for_ApprovedSoapOut">
+    <wsdl:part name="parameters" element="tns:Get_PO_for_ApprovedResponse" />
+  </wsdl:message>
+  <wsdl:message name="Get_PODetailsAllSoapIn">
+    <wsdl:part name="parameters" element="tns:Get_PODetailsAll" />
+  </wsdl:message>
+  <wsdl:message name="Get_PODetailsAllSoapOut">
+    <wsdl:part name="parameters" element="tns:Get_PODetailsAllResponse" />
+  </wsdl:message>
+  <wsdl:message name="Update_PO_NotedSoapIn">
+    <wsdl:part name="parameters" element="tns:Update_PO_Noted" />
+  </wsdl:message>
+  <wsdl:message name="Update_PO_NotedSoapOut">
+    <wsdl:part name="parameters" element="tns:Update_PO_NotedResponse" />
+  </wsdl:message>
+  <wsdl:message name="Update_PO_ApprovedSoapIn">
+    <wsdl:part name="parameters" element="tns:Update_PO_Approved" />
+  </wsdl:message>
+  <wsdl:message name="Update_PO_ApprovedSoapOut">
+    <wsdl:part name="parameters" element="tns:Update_PO_ApprovedResponse" />
+  </wsdl:message>
+  <wsdl:message name="InsertMRISSoapIn">
+    <wsdl:part name="parameters" element="tns:InsertMRIS" />
+  </wsdl:message>
+  <wsdl:message name="InsertMRISSoapOut">
+    <wsdl:part name="parameters" element="tns:InsertMRISResponse" />
+  </wsdl:message>
+  <wsdl:message name="Get_MRISSoapIn">
+    <wsdl:part name="parameters" element="tns:Get_MRIS" />
+  </wsdl:message>
+  <wsdl:message name="Get_MRISSoapOut">
+    <wsdl:part name="parameters" element="tns:Get_MRISResponse" />
+  </wsdl:message>
+  <wsdl:message name="Get_MRISDetailsSoapIn">
+    <wsdl:part name="parameters" element="tns:Get_MRISDetails" />
+  </wsdl:message>
+  <wsdl:message name="Get_MRISDetailsSoapOut">
+    <wsdl:part name="parameters" element="tns:Get_MRISDetailsResponse" />
+  </wsdl:message>
+  <wsdl:message name="Update_MRISSoapIn">
+    <wsdl:part name="parameters" element="tns:Update_MRIS" />
+  </wsdl:message>
+  <wsdl:message name="Update_MRISSoapOut">
+    <wsdl:part name="parameters" element="tns:Update_MRISResponse" />
+  </wsdl:message>
+  <wsdl:message name="Select_PO_ApprovedSoapIn">
+    <wsdl:part name="parameters" element="tns:Select_PO_Approved" />
+  </wsdl:message>
+  <wsdl:message name="Select_PO_ApprovedSoapOut">
+    <wsdl:part name="parameters" element="tns:Select_PO_ApprovedResponse" />
+  </wsdl:message>
+  <wsdl:message name="Get_Pending_RRSoapIn">
+    <wsdl:part name="parameters" element="tns:Get_Pending_RR" />
+  </wsdl:message>
+  <wsdl:message name="Get_Pending_RRSoapOut">
+    <wsdl:part name="parameters" element="tns:Get_Pending_RRResponse" />
+  </wsdl:message>
+  <wsdl:message name="InsertRISoapIn">
+    <wsdl:part name="parameters" element="tns:InsertRI" />
+  </wsdl:message>
+  <wsdl:message name="InsertRISoapOut">
+    <wsdl:part name="parameters" element="tns:InsertRIResponse" />
+  </wsdl:message>
+  <wsdl:message name="Get_RISoapIn">
+    <wsdl:part name="parameters" element="tns:Get_RI" />
+  </wsdl:message>
+  <wsdl:message name="Get_RISoapOut">
+    <wsdl:part name="parameters" element="tns:Get_RIResponse" />
+  </wsdl:message>
+  <wsdl:message name="Get_RIDetailsSoapIn">
+    <wsdl:part name="parameters" element="tns:Get_RIDetails" />
+  </wsdl:message>
+  <wsdl:message name="Get_RIDetailsSoapOut">
+    <wsdl:part name="parameters" element="tns:Get_RIDetailsResponse" />
+  </wsdl:message>
+  <wsdl:message name="Update_RISoapIn">
+    <wsdl:part name="parameters" element="tns:Update_RI" />
+  </wsdl:message>
+  <wsdl:message name="Update_RISoapOut">
+    <wsdl:part name="parameters" element="tns:Update_RIResponse" />
+  </wsdl:message>
+  <wsdl:message name="InsertReceivingReportSoapIn">
+    <wsdl:part name="parameters" element="tns:InsertReceivingReport" />
+  </wsdl:message>
+  <wsdl:message name="InsertReceivingReportSoapOut">
+    <wsdl:part name="parameters" element="tns:InsertReceivingReportResponse" />
+  </wsdl:message>
+  <wsdl:message name="InsertRRDetailsSoapIn">
+    <wsdl:part name="parameters" element="tns:InsertRRDetails" />
+  </wsdl:message>
+  <wsdl:message name="InsertRRDetailsSoapOut">
+    <wsdl:part name="parameters" element="tns:InsertRRDetailsResponse" />
+  </wsdl:message>
+  <wsdl:message name="Get_RR_for_NotedSoapIn">
+    <wsdl:part name="parameters" element="tns:Get_RR_for_Noted" />
+  </wsdl:message>
+  <wsdl:message name="Get_RR_for_NotedSoapOut">
+    <wsdl:part name="parameters" element="tns:Get_RR_for_NotedResponse" />
+  </wsdl:message>
+  <wsdl:message name="Update_RR_NotedSoapIn">
+    <wsdl:part name="parameters" element="tns:Update_RR_Noted" />
+  </wsdl:message>
+  <wsdl:message name="Update_RR_NotedSoapOut">
+    <wsdl:part name="parameters" element="tns:Update_RR_NotedResponse" />
+  </wsdl:message>
+  <wsdl:message name="Update_RR_ApprovedSoapIn">
+    <wsdl:part name="parameters" element="tns:Update_RR_Approved" />
+  </wsdl:message>
+  <wsdl:message name="Update_RR_ApprovedSoapOut">
+    <wsdl:part name="parameters" element="tns:Update_RR_ApprovedResponse" />
+  </wsdl:message>
+  <wsdl:message name="Get_RR_for_ApprovedSoapIn">
+    <wsdl:part name="parameters" element="tns:Get_RR_for_Approved" />
+  </wsdl:message>
+  <wsdl:message name="Get_RR_for_ApprovedSoapOut">
+    <wsdl:part name="parameters" element="tns:Get_RR_for_ApprovedResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetSignatorySoapIn">
+    <wsdl:part name="parameters" element="tns:GetSignatory" />
+  </wsdl:message>
+  <wsdl:message name="GetSignatorySoapOut">
+    <wsdl:part name="parameters" element="tns:GetSignatoryResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetSignatoryByUserIdSoapIn">
+    <wsdl:part name="parameters" element="tns:GetSignatoryByUserId" />
+  </wsdl:message>
+  <wsdl:message name="GetSignatoryByUserIdSoapOut">
+    <wsdl:part name="parameters" element="tns:GetSignatoryByUserIdResponse" />
+  </wsdl:message>
+  <wsdl:message name="InsertSignatorySoapIn">
+    <wsdl:part name="parameters" element="tns:InsertSignatory" />
+  </wsdl:message>
+  <wsdl:message name="InsertSignatorySoapOut">
+    <wsdl:part name="parameters" element="tns:InsertSignatoryResponse" />
+  </wsdl:message>
+  <wsdl:message name="UpdateSignatorySoapIn">
+    <wsdl:part name="parameters" element="tns:UpdateSignatory" />
+  </wsdl:message>
+  <wsdl:message name="UpdateSignatorySoapOut">
+    <wsdl:part name="parameters" element="tns:UpdateSignatoryResponse" />
+  </wsdl:message>
+  <wsdl:message name="DeleteSignatorySoapIn">
+    <wsdl:part name="parameters" element="tns:DeleteSignatory" />
+  </wsdl:message>
+  <wsdl:message name="DeleteSignatorySoapOut">
+    <wsdl:part name="parameters" element="tns:DeleteSignatoryResponse" />
+  </wsdl:message>
+  <wsdl:message name="VersionSoapIn">
+    <wsdl:part name="parameters" element="tns:Version" />
+  </wsdl:message>
+  <wsdl:message name="VersionSoapOut">
+    <wsdl:part name="parameters" element="tns:VersionResponse" />
+  </wsdl:message>
+  <wsdl:message name="VerifyUserLoginSoapIn">
+    <wsdl:part name="parameters" element="tns:VerifyUserLogin" />
+  </wsdl:message>
+  <wsdl:message name="VerifyUserLoginSoapOut">
+    <wsdl:part name="parameters" element="tns:VerifyUserLoginResponse" />
+  </wsdl:message>
+  <wsdl:message name="SelectDepartmentSoapIn">
+    <wsdl:part name="parameters" element="tns:SelectDepartment" />
+  </wsdl:message>
+  <wsdl:message name="SelectDepartmentSoapOut">
+    <wsdl:part name="parameters" element="tns:SelectDepartmentResponse" />
+  </wsdl:message>
+  <wsdl:message name="InsertDepartmentSoapIn">
+    <wsdl:part name="parameters" element="tns:InsertDepartment" />
+  </wsdl:message>
+  <wsdl:message name="InsertDepartmentSoapOut">
+    <wsdl:part name="parameters" element="tns:InsertDepartmentResponse" />
+  </wsdl:message>
+  <wsdl:message name="UpdateDepartmentSoapIn">
+    <wsdl:part name="parameters" element="tns:UpdateDepartment" />
+  </wsdl:message>
+  <wsdl:message name="UpdateDepartmentSoapOut">
+    <wsdl:part name="parameters" element="tns:UpdateDepartmentResponse" />
+  </wsdl:message>
+  <wsdl:message name="SelectBranchSoapIn">
+    <wsdl:part name="parameters" element="tns:SelectBranch" />
+  </wsdl:message>
+  <wsdl:message name="SelectBranchSoapOut">
+    <wsdl:part name="parameters" element="tns:SelectBranchResponse" />
+  </wsdl:message>
+  <wsdl:message name="InsertBranchSoapIn">
+    <wsdl:part name="parameters" element="tns:InsertBranch" />
+  </wsdl:message>
+  <wsdl:message name="InsertBranchSoapOut">
+    <wsdl:part name="parameters" element="tns:InsertBranchResponse" />
+  </wsdl:message>
+  <wsdl:message name="UpdateBranchSoapIn">
+    <wsdl:part name="parameters" element="tns:UpdateBranch" />
+  </wsdl:message>
+  <wsdl:message name="UpdateBranchSoapOut">
+    <wsdl:part name="parameters" element="tns:UpdateBranchResponse" />
+  </wsdl:message>
+  <wsdl:message name="SelectPositionSoapIn">
+    <wsdl:part name="parameters" element="tns:SelectPosition" />
+  </wsdl:message>
+  <wsdl:message name="SelectPositionSoapOut">
+    <wsdl:part name="parameters" element="tns:SelectPositionResponse" />
+  </wsdl:message>
+  <wsdl:message name="InsertPositionSoapIn">
+    <wsdl:part name="parameters" element="tns:InsertPosition" />
+  </wsdl:message>
+  <wsdl:message name="InsertPositionSoapOut">
+    <wsdl:part name="parameters" element="tns:InsertPositionResponse" />
+  </wsdl:message>
+  <wsdl:message name="UpdatePositionSoapIn">
+    <wsdl:part name="parameters" element="tns:UpdatePosition" />
+  </wsdl:message>
+  <wsdl:message name="UpdatePositionSoapOut">
+    <wsdl:part name="parameters" element="tns:UpdatePositionResponse" />
+  </wsdl:message>
+  <wsdl:message name="RegisterUserAccountSoapIn">
+    <wsdl:part name="parameters" element="tns:RegisterUserAccount" />
+  </wsdl:message>
+  <wsdl:message name="RegisterUserAccountSoapOut">
+    <wsdl:part name="parameters" element="tns:RegisterUserAccountResponse" />
+  </wsdl:message>
+  <wsdl:message name="SelectUserByUserNameSoapIn">
+    <wsdl:part name="parameters" element="tns:SelectUserByUserName" />
+  </wsdl:message>
+  <wsdl:message name="SelectUserByUserNameSoapOut">
+    <wsdl:part name="parameters" element="tns:SelectUserByUserNameResponse" />
+  </wsdl:message>
+  <wsdl:message name="SelectUserByUserIDSoapIn">
+    <wsdl:part name="parameters" element="tns:SelectUserByUserID" />
+  </wsdl:message>
+  <wsdl:message name="SelectUserByUserIDSoapOut">
+    <wsdl:part name="parameters" element="tns:SelectUserByUserIDResponse" />
+  </wsdl:message>
+  <wsdl:message name="SelectAllUserSoapIn">
+    <wsdl:part name="parameters" element="tns:SelectAllUser" />
+  </wsdl:message>
+  <wsdl:message name="SelectAllUserSoapOut">
+    <wsdl:part name="parameters" element="tns:SelectAllUserResponse" />
+  </wsdl:message>
+  <wsdl:message name="SelectAllUserV2SoapIn">
+    <wsdl:part name="parameters" element="tns:SelectAllUserV2" />
+  </wsdl:message>
+  <wsdl:message name="SelectAllUserV2SoapOut">
+    <wsdl:part name="parameters" element="tns:SelectAllUserV2Response" />
+  </wsdl:message>
+  <wsdl:message name="InsertAccessModuleSoapIn">
+    <wsdl:part name="parameters" element="tns:InsertAccessModule" />
+  </wsdl:message>
+  <wsdl:message name="InsertAccessModuleSoapOut">
+    <wsdl:part name="parameters" element="tns:InsertAccessModuleResponse" />
+  </wsdl:message>
+  <wsdl:message name="InsertUserAccessRightsSoapIn">
+    <wsdl:part name="parameters" element="tns:InsertUserAccessRights" />
+  </wsdl:message>
+  <wsdl:message name="InsertUserAccessRightsSoapOut">
+    <wsdl:part name="parameters" element="tns:InsertUserAccessRightsResponse" />
+  </wsdl:message>
+  <wsdl:message name="DeleteUserAccessRightsSoapIn">
+    <wsdl:part name="parameters" element="tns:DeleteUserAccessRights" />
+  </wsdl:message>
+  <wsdl:message name="DeleteUserAccessRightsSoapOut">
+    <wsdl:part name="parameters" element="tns:DeleteUserAccessRightsResponse" />
+  </wsdl:message>
+  <wsdl:message name="SelectUserAccessModuleSoapIn">
+    <wsdl:part name="parameters" element="tns:SelectUserAccessModule" />
+  </wsdl:message>
+  <wsdl:message name="SelectUserAccessModuleSoapOut">
+    <wsdl:part name="parameters" element="tns:SelectUserAccessModuleResponse" />
+  </wsdl:message>
+  <wsdl:message name="UpdateUserSoapIn">
+    <wsdl:part name="parameters" element="tns:UpdateUser" />
+  </wsdl:message>
+  <wsdl:message name="UpdateUserSoapOut">
+    <wsdl:part name="parameters" element="tns:UpdateUserResponse" />
+  </wsdl:message>
+  <wsdl:message name="UpdateUserPasswordSoapIn">
+    <wsdl:part name="parameters" element="tns:UpdateUserPassword" />
+  </wsdl:message>
+  <wsdl:message name="UpdateUserPasswordSoapOut">
+    <wsdl:part name="parameters" element="tns:UpdateUserPasswordResponse" />
+  </wsdl:message>
+  <wsdl:message name="InsertSupplierSoapIn">
+    <wsdl:part name="parameters" element="tns:InsertSupplier" />
+  </wsdl:message>
+  <wsdl:message name="InsertSupplierSoapOut">
+    <wsdl:part name="parameters" element="tns:InsertSupplierResponse" />
+  </wsdl:message>
+  <wsdl:message name="InsertAccountsSoapIn">
+    <wsdl:part name="parameters" element="tns:InsertAccounts" />
+  </wsdl:message>
+  <wsdl:message name="InsertAccountsSoapOut">
+    <wsdl:part name="parameters" element="tns:InsertAccountsResponse" />
+  </wsdl:message>
+  <wsdl:message name="InsertItemsSoapIn">
+    <wsdl:part name="parameters" element="tns:InsertItems" />
+  </wsdl:message>
+  <wsdl:message name="InsertItemsSoapOut">
+    <wsdl:part name="parameters" element="tns:InsertItemsResponse" />
+  </wsdl:message>
+  <wsdl:message name="SelectSupplierSoapIn">
+    <wsdl:part name="parameters" element="tns:SelectSupplier" />
+  </wsdl:message>
+  <wsdl:message name="SelectSupplierSoapOut">
+    <wsdl:part name="parameters" element="tns:SelectSupplierResponse" />
+  </wsdl:message>
+  <wsdl:message name="UpdateSupplierSoapIn">
+    <wsdl:part name="parameters" element="tns:UpdateSupplier" />
+  </wsdl:message>
+  <wsdl:message name="UpdateSupplierSoapOut">
+    <wsdl:part name="parameters" element="tns:UpdateSupplierResponse" />
+  </wsdl:message>
+  <wsdl:message name="UpdateAccountSoapIn">
+    <wsdl:part name="parameters" element="tns:UpdateAccount" />
+  </wsdl:message>
+  <wsdl:message name="UpdateAccountSoapOut">
+    <wsdl:part name="parameters" element="tns:UpdateAccountResponse" />
+  </wsdl:message>
+  <wsdl:message name="SelectAllAccountSoapIn">
+    <wsdl:part name="parameters" element="tns:SelectAllAccount" />
+  </wsdl:message>
+  <wsdl:message name="SelectAllAccountSoapOut">
+    <wsdl:part name="parameters" element="tns:SelectAllAccountResponse" />
+  </wsdl:message>
+  <wsdl:message name="SelectAllItemSoapIn">
+    <wsdl:part name="parameters" element="tns:SelectAllItem" />
+  </wsdl:message>
+  <wsdl:message name="SelectAllItemSoapOut">
+    <wsdl:part name="parameters" element="tns:SelectAllItemResponse" />
+  </wsdl:message>
+  <wsdl:message name="SelectItemPerIDSoapIn">
+    <wsdl:part name="parameters" element="tns:SelectItemPerID" />
+  </wsdl:message>
+  <wsdl:message name="SelectItemPerIDSoapOut">
+    <wsdl:part name="parameters" element="tns:SelectItemPerIDResponse" />
+  </wsdl:message>
+  <wsdl:message name="UpdateItemSoapIn">
+    <wsdl:part name="parameters" element="tns:UpdateItem" />
+  </wsdl:message>
+  <wsdl:message name="UpdateItemSoapOut">
+    <wsdl:part name="parameters" element="tns:UpdateItemResponse" />
+  </wsdl:message>
+  <wsdl:message name="InsertRequestOrderSoapIn">
+    <wsdl:part name="parameters" element="tns:InsertRequestOrder" />
+  </wsdl:message>
+  <wsdl:message name="InsertRequestOrderSoapOut">
+    <wsdl:part name="parameters" element="tns:InsertRequestOrderResponse" />
+  </wsdl:message>
+  <wsdl:message name="Get_RO_RequestorSoapIn">
+    <wsdl:part name="parameters" element="tns:Get_RO_Requestor" />
+  </wsdl:message>
+  <wsdl:message name="Get_RO_RequestorSoapOut">
+    <wsdl:part name="parameters" element="tns:Get_RO_RequestorResponse" />
+  </wsdl:message>
+  <wsdl:message name="Print_TransactionSoapIn">
+    <wsdl:part name="parameters" element="tns:Print_Transaction" />
+  </wsdl:message>
+  <wsdl:message name="Print_TransactionSoapOut">
+    <wsdl:part name="parameters" element="tns:Print_TransactionResponse" />
+  </wsdl:message>
+  <wsdl:message name="Get_RO_BY_RONumberSoapIn">
+    <wsdl:part name="parameters" element="tns:Get_RO_BY_RONumber" />
+  </wsdl:message>
+  <wsdl:message name="Get_RO_BY_RONumberSoapOut">
+    <wsdl:part name="parameters" element="tns:Get_RO_BY_RONumberResponse" />
+  </wsdl:message>
+  <wsdl:message name="Get_RO_DetailsSoapIn">
+    <wsdl:part name="parameters" element="tns:Get_RO_Details" />
+  </wsdl:message>
+  <wsdl:message name="Get_RO_DetailsSoapOut">
+    <wsdl:part name="parameters" element="tns:Get_RO_DetailsResponse" />
+  </wsdl:message>
+  <wsdl:message name="Get_RO_EndorserSoapIn">
+    <wsdl:part name="parameters" element="tns:Get_RO_Endorser" />
+  </wsdl:message>
+  <wsdl:message name="Get_RO_EndorserSoapOut">
+    <wsdl:part name="parameters" element="tns:Get_RO_EndorserResponse" />
+  </wsdl:message>
+  <wsdl:message name="Get_RO_RecommendersSoapIn">
+    <wsdl:part name="parameters" element="tns:Get_RO_Recommenders" />
+  </wsdl:message>
+  <wsdl:message name="Get_RO_RecommendersSoapOut">
+    <wsdl:part name="parameters" element="tns:Get_RO_RecommendersResponse" />
+  </wsdl:message>
+  <wsdl:message name="Get_RO_ApproverSoapIn">
+    <wsdl:part name="parameters" element="tns:Get_RO_Approver" />
+  </wsdl:message>
+  <wsdl:message name="Get_RO_ApproverSoapOut">
+    <wsdl:part name="parameters" element="tns:Get_RO_ApproverResponse" />
+  </wsdl:message>
+  <wsdl:message name="Get_RO_ByRONumberSoapIn">
+    <wsdl:part name="parameters" element="tns:Get_RO_ByRONumber" />
+  </wsdl:message>
+  <wsdl:message name="Get_RO_ByRONumberSoapOut">
+    <wsdl:part name="parameters" element="tns:Get_RO_ByRONumberResponse" />
+  </wsdl:message>
+  <wsdl:message name="RO_UpdateForEndorseSoapIn">
+    <wsdl:part name="parameters" element="tns:RO_UpdateForEndorse" />
+  </wsdl:message>
+  <wsdl:message name="RO_UpdateForEndorseSoapOut">
+    <wsdl:part name="parameters" element="tns:RO_UpdateForEndorseResponse" />
+  </wsdl:message>
+  <wsdl:message name="RO_UpdateForRecommendSoapIn">
+    <wsdl:part name="parameters" element="tns:RO_UpdateForRecommend" />
+  </wsdl:message>
+  <wsdl:message name="RO_UpdateForRecommendSoapOut">
+    <wsdl:part name="parameters" element="tns:RO_UpdateForRecommendResponse" />
+  </wsdl:message>
+  <wsdl:message name="RO_UpdateForApprovedSoapIn">
+    <wsdl:part name="parameters" element="tns:RO_UpdateForApproved" />
+  </wsdl:message>
+  <wsdl:message name="RO_UpdateForApprovedSoapOut">
+    <wsdl:part name="parameters" element="tns:RO_UpdateForApprovedResponse" />
+  </wsdl:message>
+  <wsdl:message name="Select_RO_ApproveSoapIn">
+    <wsdl:part name="parameters" element="tns:Select_RO_Approve" />
+  </wsdl:message>
+  <wsdl:message name="Select_RO_ApproveSoapOut">
+    <wsdl:part name="parameters" element="tns:Select_RO_ApproveResponse" />
+  </wsdl:message>
+  <wsdl:message name="InsertCanvassSoapIn">
+    <wsdl:part name="parameters" element="tns:InsertCanvass" />
+  </wsdl:message>
+  <wsdl:message name="InsertCanvassSoapOut">
+    <wsdl:part name="parameters" element="tns:InsertCanvassResponse" />
+  </wsdl:message>
+  <wsdl:message name="InsertCanvassDetailsSoapIn">
+    <wsdl:part name="parameters" element="tns:InsertCanvassDetails" />
+  </wsdl:message>
+  <wsdl:message name="InsertCanvassDetailsSoapOut">
+    <wsdl:part name="parameters" element="tns:InsertCanvassDetailsResponse" />
+  </wsdl:message>
+  <wsdl:message name="Approve_CanvassItemsSoapIn">
+    <wsdl:part name="parameters" element="tns:Approve_CanvassItems" />
+  </wsdl:message>
+  <wsdl:message name="Approve_CanvassItemsSoapOut">
+    <wsdl:part name="parameters" element="tns:Approve_CanvassItemsResponse" />
+  </wsdl:message>
+  <wsdl:message name="Get_CanvassSoapIn">
+    <wsdl:part name="parameters" element="tns:Get_Canvass" />
+  </wsdl:message>
+  <wsdl:message name="Get_CanvassSoapOut">
+    <wsdl:part name="parameters" element="tns:Get_CanvassResponse" />
+  </wsdl:message>
+  <wsdl:message name="Get_Canvass_for_NotedSoapIn">
+    <wsdl:part name="parameters" element="tns:Get_Canvass_for_Noted" />
+  </wsdl:message>
+  <wsdl:message name="Get_Canvass_for_NotedSoapOut">
+    <wsdl:part name="parameters" element="tns:Get_Canvass_for_NotedResponse" />
+  </wsdl:message>
+  <wsdl:message name="Get_Canvass_for_ApprovedSoapIn">
+    <wsdl:part name="parameters" element="tns:Get_Canvass_for_Approved" />
+  </wsdl:message>
+  <wsdl:message name="Get_Canvass_for_ApprovedSoapOut">
+    <wsdl:part name="parameters" element="tns:Get_Canvass_for_ApprovedResponse" />
+  </wsdl:message>
+  <wsdl:message name="Get_CanvassDetailsNotApprovedSoapIn">
+    <wsdl:part name="parameters" element="tns:Get_CanvassDetailsNotApproved" />
+  </wsdl:message>
+  <wsdl:message name="Get_CanvassDetailsNotApprovedSoapOut">
+    <wsdl:part name="parameters" element="tns:Get_CanvassDetailsNotApprovedResponse" />
+  </wsdl:message>
+  <wsdl:message name="Get_CanvassDetailsApprovedSoapIn">
+    <wsdl:part name="parameters" element="tns:Get_CanvassDetailsApproved" />
+  </wsdl:message>
+  <wsdl:message name="Get_CanvassDetailsApprovedSoapOut">
+    <wsdl:part name="parameters" element="tns:Get_CanvassDetailsApprovedResponse" />
+  </wsdl:message>
+  <wsdl:message name="Get_CanvassDetailsAllSoapIn">
+    <wsdl:part name="parameters" element="tns:Get_CanvassDetailsAll" />
+  </wsdl:message>
+  <wsdl:message name="Get_CanvassDetailsAllSoapOut">
+    <wsdl:part name="parameters" element="tns:Get_CanvassDetailsAllResponse" />
+  </wsdl:message>
+  <wsdl:message name="Get_CanvassDetailsAll1SoapIn">
+    <wsdl:part name="parameters" element="tns:Get_CanvassDetailsAll1" />
+  </wsdl:message>
+  <wsdl:message name="Get_CanvassDetailsAll1SoapOut">
+    <wsdl:part name="parameters" element="tns:Get_CanvassDetailsAll1Response" />
+  </wsdl:message>
+  <wsdl:message name="GetAllItemsSoapIn">
+    <wsdl:part name="parameters" element="tns:GetAllItems" />
+  </wsdl:message>
+  <wsdl:message name="GetAllItemsSoapOut">
+    <wsdl:part name="parameters" element="tns:GetAllItemsResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetAllDataSoapIn">
+    <wsdl:part name="parameters" element="tns:GetAllData" />
+  </wsdl:message>
+  <wsdl:message name="GetAllDataSoapOut">
+    <wsdl:part name="parameters" element="tns:GetAllDataResponse" />
+  </wsdl:message>
+  <wsdl:message name="InsertConstructionSoapIn">
+    <wsdl:part name="parameters" element="tns:InsertConstruction" />
+  </wsdl:message>
+  <wsdl:message name="InsertConstructionSoapOut">
+    <wsdl:part name="parameters" element="tns:InsertConstructionResponse" />
+  </wsdl:message>
+  <wsdl:message name="Update_Canvass_NotedSoapIn">
+    <wsdl:part name="parameters" element="tns:Update_Canvass_Noted" />
+  </wsdl:message>
+  <wsdl:message name="Update_Canvass_NotedSoapOut">
+    <wsdl:part name="parameters" element="tns:Update_Canvass_NotedResponse" />
+  </wsdl:message>
+  <wsdl:message name="Update_Canvass_ApprovedSoapIn">
+    <wsdl:part name="parameters" element="tns:Update_Canvass_Approved" />
+  </wsdl:message>
+  <wsdl:message name="Update_Canvass_ApprovedSoapOut">
+    <wsdl:part name="parameters" element="tns:Update_Canvass_ApprovedResponse" />
+  </wsdl:message>
+  <wsdl:portType name="Service1Soap">
+    <wsdl:operation name="Select_Canvass_Approved">
+      <wsdl:input message="tns:Select_Canvass_ApprovedSoapIn" />
+      <wsdl:output message="tns:Select_Canvass_ApprovedSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SelectSummaryReport">
+      <wsdl:input message="tns:SelectSummaryReportSoapIn" />
+      <wsdl:output message="tns:SelectSummaryReportSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertPurchaseOrder">
+      <wsdl:input message="tns:InsertPurchaseOrderSoapIn" />
+      <wsdl:output message="tns:InsertPurchaseOrderSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Get_PO">
+      <wsdl:input message="tns:Get_POSoapIn" />
+      <wsdl:output message="tns:Get_POSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Get_Pending_PO">
+      <wsdl:input message="tns:Get_Pending_POSoapIn" />
+      <wsdl:output message="tns:Get_Pending_POSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Get_PO_for_Noted">
+      <wsdl:input message="tns:Get_PO_for_NotedSoapIn" />
+      <wsdl:output message="tns:Get_PO_for_NotedSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Get_PO_for_Approved">
+      <wsdl:input message="tns:Get_PO_for_ApprovedSoapIn" />
+      <wsdl:output message="tns:Get_PO_for_ApprovedSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Get_PODetailsAll">
+      <wsdl:input message="tns:Get_PODetailsAllSoapIn" />
+      <wsdl:output message="tns:Get_PODetailsAllSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Update_PO_Noted">
+      <wsdl:input message="tns:Update_PO_NotedSoapIn" />
+      <wsdl:output message="tns:Update_PO_NotedSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Update_PO_Approved">
+      <wsdl:input message="tns:Update_PO_ApprovedSoapIn" />
+      <wsdl:output message="tns:Update_PO_ApprovedSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertMRIS">
+      <wsdl:input message="tns:InsertMRISSoapIn" />
+      <wsdl:output message="tns:InsertMRISSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Get_MRIS">
+      <wsdl:input message="tns:Get_MRISSoapIn" />
+      <wsdl:output message="tns:Get_MRISSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Get_MRISDetails">
+      <wsdl:input message="tns:Get_MRISDetailsSoapIn" />
+      <wsdl:output message="tns:Get_MRISDetailsSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Update_MRIS">
+      <wsdl:input message="tns:Update_MRISSoapIn" />
+      <wsdl:output message="tns:Update_MRISSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Select_PO_Approved">
+      <wsdl:input message="tns:Select_PO_ApprovedSoapIn" />
+      <wsdl:output message="tns:Select_PO_ApprovedSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Get_Pending_RR">
+      <wsdl:input message="tns:Get_Pending_RRSoapIn" />
+      <wsdl:output message="tns:Get_Pending_RRSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertRI">
+      <wsdl:input message="tns:InsertRISoapIn" />
+      <wsdl:output message="tns:InsertRISoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Get_RI">
+      <wsdl:input message="tns:Get_RISoapIn" />
+      <wsdl:output message="tns:Get_RISoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Get_RIDetails">
+      <wsdl:input message="tns:Get_RIDetailsSoapIn" />
+      <wsdl:output message="tns:Get_RIDetailsSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Update_RI">
+      <wsdl:input message="tns:Update_RISoapIn" />
+      <wsdl:output message="tns:Update_RISoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertReceivingReport">
+      <wsdl:input message="tns:InsertReceivingReportSoapIn" />
+      <wsdl:output message="tns:InsertReceivingReportSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertRRDetails">
+      <wsdl:input message="tns:InsertRRDetailsSoapIn" />
+      <wsdl:output message="tns:InsertRRDetailsSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Get_RR_for_Noted">
+      <wsdl:input message="tns:Get_RR_for_NotedSoapIn" />
+      <wsdl:output message="tns:Get_RR_for_NotedSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Update_RR_Noted">
+      <wsdl:input message="tns:Update_RR_NotedSoapIn" />
+      <wsdl:output message="tns:Update_RR_NotedSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Update_RR_Approved">
+      <wsdl:input message="tns:Update_RR_ApprovedSoapIn" />
+      <wsdl:output message="tns:Update_RR_ApprovedSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Get_RR_for_Approved">
+      <wsdl:input message="tns:Get_RR_for_ApprovedSoapIn" />
+      <wsdl:output message="tns:Get_RR_for_ApprovedSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetSignatory">
+      <wsdl:input message="tns:GetSignatorySoapIn" />
+      <wsdl:output message="tns:GetSignatorySoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetSignatoryByUserId">
+      <wsdl:input message="tns:GetSignatoryByUserIdSoapIn" />
+      <wsdl:output message="tns:GetSignatoryByUserIdSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertSignatory">
+      <wsdl:input message="tns:InsertSignatorySoapIn" />
+      <wsdl:output message="tns:InsertSignatorySoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateSignatory">
+      <wsdl:input message="tns:UpdateSignatorySoapIn" />
+      <wsdl:output message="tns:UpdateSignatorySoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteSignatory">
+      <wsdl:input message="tns:DeleteSignatorySoapIn" />
+      <wsdl:output message="tns:DeleteSignatorySoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Version">
+      <wsdl:input message="tns:VersionSoapIn" />
+      <wsdl:output message="tns:VersionSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="VerifyUserLogin">
+      <wsdl:input message="tns:VerifyUserLoginSoapIn" />
+      <wsdl:output message="tns:VerifyUserLoginSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SelectDepartment">
+      <wsdl:input message="tns:SelectDepartmentSoapIn" />
+      <wsdl:output message="tns:SelectDepartmentSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertDepartment">
+      <wsdl:input message="tns:InsertDepartmentSoapIn" />
+      <wsdl:output message="tns:InsertDepartmentSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateDepartment">
+      <wsdl:input message="tns:UpdateDepartmentSoapIn" />
+      <wsdl:output message="tns:UpdateDepartmentSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SelectBranch">
+      <wsdl:input message="tns:SelectBranchSoapIn" />
+      <wsdl:output message="tns:SelectBranchSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertBranch">
+      <wsdl:input message="tns:InsertBranchSoapIn" />
+      <wsdl:output message="tns:InsertBranchSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateBranch">
+      <wsdl:input message="tns:UpdateBranchSoapIn" />
+      <wsdl:output message="tns:UpdateBranchSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SelectPosition">
+      <wsdl:input message="tns:SelectPositionSoapIn" />
+      <wsdl:output message="tns:SelectPositionSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertPosition">
+      <wsdl:input message="tns:InsertPositionSoapIn" />
+      <wsdl:output message="tns:InsertPositionSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdatePosition">
+      <wsdl:input message="tns:UpdatePositionSoapIn" />
+      <wsdl:output message="tns:UpdatePositionSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="RegisterUserAccount">
+      <wsdl:input message="tns:RegisterUserAccountSoapIn" />
+      <wsdl:output message="tns:RegisterUserAccountSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SelectUserByUserName">
+      <wsdl:input message="tns:SelectUserByUserNameSoapIn" />
+      <wsdl:output message="tns:SelectUserByUserNameSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SelectUserByUserID">
+      <wsdl:input message="tns:SelectUserByUserIDSoapIn" />
+      <wsdl:output message="tns:SelectUserByUserIDSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SelectAllUser">
+      <wsdl:input message="tns:SelectAllUserSoapIn" />
+      <wsdl:output message="tns:SelectAllUserSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SelectAllUserV2">
+      <wsdl:input message="tns:SelectAllUserV2SoapIn" />
+      <wsdl:output message="tns:SelectAllUserV2SoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertAccessModule">
+      <wsdl:input message="tns:InsertAccessModuleSoapIn" />
+      <wsdl:output message="tns:InsertAccessModuleSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertUserAccessRights">
+      <wsdl:input message="tns:InsertUserAccessRightsSoapIn" />
+      <wsdl:output message="tns:InsertUserAccessRightsSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteUserAccessRights">
+      <wsdl:input message="tns:DeleteUserAccessRightsSoapIn" />
+      <wsdl:output message="tns:DeleteUserAccessRightsSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SelectUserAccessModule">
+      <wsdl:input message="tns:SelectUserAccessModuleSoapIn" />
+      <wsdl:output message="tns:SelectUserAccessModuleSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateUser">
+      <wsdl:input message="tns:UpdateUserSoapIn" />
+      <wsdl:output message="tns:UpdateUserSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateUserPassword">
+      <wsdl:input message="tns:UpdateUserPasswordSoapIn" />
+      <wsdl:output message="tns:UpdateUserPasswordSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertSupplier">
+      <wsdl:input message="tns:InsertSupplierSoapIn" />
+      <wsdl:output message="tns:InsertSupplierSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertAccounts">
+      <wsdl:input message="tns:InsertAccountsSoapIn" />
+      <wsdl:output message="tns:InsertAccountsSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertItems">
+      <wsdl:input message="tns:InsertItemsSoapIn" />
+      <wsdl:output message="tns:InsertItemsSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SelectSupplier">
+      <wsdl:input message="tns:SelectSupplierSoapIn" />
+      <wsdl:output message="tns:SelectSupplierSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateSupplier">
+      <wsdl:input message="tns:UpdateSupplierSoapIn" />
+      <wsdl:output message="tns:UpdateSupplierSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateAccount">
+      <wsdl:input message="tns:UpdateAccountSoapIn" />
+      <wsdl:output message="tns:UpdateAccountSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SelectAllAccount">
+      <wsdl:input message="tns:SelectAllAccountSoapIn" />
+      <wsdl:output message="tns:SelectAllAccountSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SelectAllItem">
+      <wsdl:input message="tns:SelectAllItemSoapIn" />
+      <wsdl:output message="tns:SelectAllItemSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SelectItemPerID">
+      <wsdl:input message="tns:SelectItemPerIDSoapIn" />
+      <wsdl:output message="tns:SelectItemPerIDSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateItem">
+      <wsdl:input message="tns:UpdateItemSoapIn" />
+      <wsdl:output message="tns:UpdateItemSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertRequestOrder">
+      <wsdl:input message="tns:InsertRequestOrderSoapIn" />
+      <wsdl:output message="tns:InsertRequestOrderSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Get_RO_Requestor">
+      <wsdl:input message="tns:Get_RO_RequestorSoapIn" />
+      <wsdl:output message="tns:Get_RO_RequestorSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Print_Transaction">
+      <wsdl:input message="tns:Print_TransactionSoapIn" />
+      <wsdl:output message="tns:Print_TransactionSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Get_RO_BY_RONumber">
+      <wsdl:input message="tns:Get_RO_BY_RONumberSoapIn" />
+      <wsdl:output message="tns:Get_RO_BY_RONumberSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Get_RO_Details">
+      <wsdl:input message="tns:Get_RO_DetailsSoapIn" />
+      <wsdl:output message="tns:Get_RO_DetailsSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Get_RO_Endorser">
+      <wsdl:input message="tns:Get_RO_EndorserSoapIn" />
+      <wsdl:output message="tns:Get_RO_EndorserSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Get_RO_Recommenders">
+      <wsdl:input message="tns:Get_RO_RecommendersSoapIn" />
+      <wsdl:output message="tns:Get_RO_RecommendersSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Get_RO_Approver">
+      <wsdl:input message="tns:Get_RO_ApproverSoapIn" />
+      <wsdl:output message="tns:Get_RO_ApproverSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Get_RO_ByRONumber">
+      <wsdl:input message="tns:Get_RO_ByRONumberSoapIn" />
+      <wsdl:output message="tns:Get_RO_ByRONumberSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="RO_UpdateForEndorse">
+      <wsdl:input message="tns:RO_UpdateForEndorseSoapIn" />
+      <wsdl:output message="tns:RO_UpdateForEndorseSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="RO_UpdateForRecommend">
+      <wsdl:input message="tns:RO_UpdateForRecommendSoapIn" />
+      <wsdl:output message="tns:RO_UpdateForRecommendSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="RO_UpdateForApproved">
+      <wsdl:input message="tns:RO_UpdateForApprovedSoapIn" />
+      <wsdl:output message="tns:RO_UpdateForApprovedSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Select_RO_Approve">
+      <wsdl:input message="tns:Select_RO_ApproveSoapIn" />
+      <wsdl:output message="tns:Select_RO_ApproveSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertCanvass">
+      <wsdl:input message="tns:InsertCanvassSoapIn" />
+      <wsdl:output message="tns:InsertCanvassSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertCanvassDetails">
+      <wsdl:input message="tns:InsertCanvassDetailsSoapIn" />
+      <wsdl:output message="tns:InsertCanvassDetailsSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Approve_CanvassItems">
+      <wsdl:input message="tns:Approve_CanvassItemsSoapIn" />
+      <wsdl:output message="tns:Approve_CanvassItemsSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Get_Canvass">
+      <wsdl:input message="tns:Get_CanvassSoapIn" />
+      <wsdl:output message="tns:Get_CanvassSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Get_Canvass_for_Noted">
+      <wsdl:input message="tns:Get_Canvass_for_NotedSoapIn" />
+      <wsdl:output message="tns:Get_Canvass_for_NotedSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Get_Canvass_for_Approved">
+      <wsdl:input message="tns:Get_Canvass_for_ApprovedSoapIn" />
+      <wsdl:output message="tns:Get_Canvass_for_ApprovedSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Get_CanvassDetailsNotApproved">
+      <wsdl:input message="tns:Get_CanvassDetailsNotApprovedSoapIn" />
+      <wsdl:output message="tns:Get_CanvassDetailsNotApprovedSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Get_CanvassDetailsApproved">
+      <wsdl:input message="tns:Get_CanvassDetailsApprovedSoapIn" />
+      <wsdl:output message="tns:Get_CanvassDetailsApprovedSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Get_CanvassDetailsAll">
+      <wsdl:input message="tns:Get_CanvassDetailsAllSoapIn" />
+      <wsdl:output message="tns:Get_CanvassDetailsAllSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Get_CanvassDetailsAll1">
+      <wsdl:input message="tns:Get_CanvassDetailsAll1SoapIn" />
+      <wsdl:output message="tns:Get_CanvassDetailsAll1SoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAllItems">
+      <wsdl:input message="tns:GetAllItemsSoapIn" />
+      <wsdl:output message="tns:GetAllItemsSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAllData">
+      <wsdl:input message="tns:GetAllDataSoapIn" />
+      <wsdl:output message="tns:GetAllDataSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertConstruction">
+      <wsdl:input message="tns:InsertConstructionSoapIn" />
+      <wsdl:output message="tns:InsertConstructionSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Update_Canvass_Noted">
+      <wsdl:input message="tns:Update_Canvass_NotedSoapIn" />
+      <wsdl:output message="tns:Update_Canvass_NotedSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Update_Canvass_Approved">
+      <wsdl:input message="tns:Update_Canvass_ApprovedSoapIn" />
+      <wsdl:output message="tns:Update_Canvass_ApprovedSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="Service1Soap" type="tns:Service1Soap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="Select_Canvass_Approved">
+      <soap:operation soapAction="http://tempuri.org/Select_Canvass_Approved" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SelectSummaryReport">
+      <soap:operation soapAction="http://tempuri.org/SelectSummaryReport" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertPurchaseOrder">
+      <soap:operation soapAction="http://tempuri.org/InsertPurchaseOrder" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Get_PO">
+      <soap:operation soapAction="http://tempuri.org/Get_PO" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Get_Pending_PO">
+      <soap:operation soapAction="http://tempuri.org/Get_Pending_PO" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Get_PO_for_Noted">
+      <soap:operation soapAction="http://tempuri.org/Get_PO_for_Noted" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Get_PO_for_Approved">
+      <soap:operation soapAction="http://tempuri.org/Get_PO_for_Approved" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Get_PODetailsAll">
+      <soap:operation soapAction="http://tempuri.org/Get_PODetailsAll" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Update_PO_Noted">
+      <soap:operation soapAction="http://tempuri.org/Update_PO_Noted" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Update_PO_Approved">
+      <soap:operation soapAction="http://tempuri.org/Update_PO_Approved" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertMRIS">
+      <soap:operation soapAction="http://tempuri.org/InsertMRIS" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Get_MRIS">
+      <soap:operation soapAction="http://tempuri.org/Get_MRIS" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Get_MRISDetails">
+      <soap:operation soapAction="http://tempuri.org/Get_MRISDetails" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Update_MRIS">
+      <soap:operation soapAction="http://tempuri.org/Update_MRIS" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Select_PO_Approved">
+      <soap:operation soapAction="http://tempuri.org/Select_PO_Approved" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Get_Pending_RR">
+      <soap:operation soapAction="http://tempuri.org/Get_Pending_RR" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertRI">
+      <soap:operation soapAction="http://tempuri.org/InsertRI" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Get_RI">
+      <soap:operation soapAction="http://tempuri.org/Get_RI" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Get_RIDetails">
+      <soap:operation soapAction="http://tempuri.org/Get_RIDetails" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Update_RI">
+      <soap:operation soapAction="http://tempuri.org/Update_RI" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertReceivingReport">
+      <soap:operation soapAction="http://tempuri.org/InsertReceivingReport" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertRRDetails">
+      <soap:operation soapAction="http://tempuri.org/InsertRRDetails" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Get_RR_for_Noted">
+      <soap:operation soapAction="http://tempuri.org/Get_RR_for_Noted" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Update_RR_Noted">
+      <soap:operation soapAction="http://tempuri.org/Update_RR_Noted" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Update_RR_Approved">
+      <soap:operation soapAction="http://tempuri.org/Update_RR_Approved" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Get_RR_for_Approved">
+      <soap:operation soapAction="http://tempuri.org/Get_RR_for_Approved" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetSignatory">
+      <soap:operation soapAction="http://tempuri.org/GetSignatory" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetSignatoryByUserId">
+      <soap:operation soapAction="http://tempuri.org/GetSignatoryByUserId" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertSignatory">
+      <soap:operation soapAction="http://tempuri.org/InsertSignatory" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateSignatory">
+      <soap:operation soapAction="http://tempuri.org/UpdateSignatory" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteSignatory">
+      <soap:operation soapAction="http://tempuri.org/DeleteSignatory" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Version">
+      <soap:operation soapAction="http://tempuri.org/Version" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="VerifyUserLogin">
+      <soap:operation soapAction="http://tempuri.org/VerifyUserLogin" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SelectDepartment">
+      <soap:operation soapAction="http://tempuri.org/SelectDepartment" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertDepartment">
+      <soap:operation soapAction="http://tempuri.org/InsertDepartment" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateDepartment">
+      <soap:operation soapAction="http://tempuri.org/UpdateDepartment" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SelectBranch">
+      <soap:operation soapAction="http://tempuri.org/SelectBranch" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertBranch">
+      <soap:operation soapAction="http://tempuri.org/InsertBranch" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateBranch">
+      <soap:operation soapAction="http://tempuri.org/UpdateBranch" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SelectPosition">
+      <soap:operation soapAction="http://tempuri.org/SelectPosition" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertPosition">
+      <soap:operation soapAction="http://tempuri.org/InsertPosition" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdatePosition">
+      <soap:operation soapAction="http://tempuri.org/UpdatePosition" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RegisterUserAccount">
+      <soap:operation soapAction="http://tempuri.org/RegisterUserAccount" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SelectUserByUserName">
+      <soap:operation soapAction="http://tempuri.org/SelectUserByUserName" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SelectUserByUserID">
+      <soap:operation soapAction="http://tempuri.org/SelectUserByUserID" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SelectAllUser">
+      <soap:operation soapAction="http://tempuri.org/SelectAllUser" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SelectAllUserV2">
+      <soap:operation soapAction="http://tempuri.org/SelectAllUserV2" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertAccessModule">
+      <soap:operation soapAction="http://tempuri.org/InsertAccessModule" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertUserAccessRights">
+      <soap:operation soapAction="http://tempuri.org/InsertUserAccessRights" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteUserAccessRights">
+      <soap:operation soapAction="http://tempuri.org/DeleteUserAccessRights" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SelectUserAccessModule">
+      <soap:operation soapAction="http://tempuri.org/SelectUserAccessModule" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateUser">
+      <soap:operation soapAction="http://tempuri.org/UpdateUser" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateUserPassword">
+      <soap:operation soapAction="http://tempuri.org/UpdateUserPassword" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertSupplier">
+      <soap:operation soapAction="http://tempuri.org/InsertSupplier" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertAccounts">
+      <soap:operation soapAction="http://tempuri.org/InsertAccounts" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertItems">
+      <soap:operation soapAction="http://tempuri.org/InsertItems" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SelectSupplier">
+      <soap:operation soapAction="http://tempuri.org/SelectSupplier" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateSupplier">
+      <soap:operation soapAction="http://tempuri.org/UpdateSupplier" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateAccount">
+      <soap:operation soapAction="http://tempuri.org/UpdateAccount" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SelectAllAccount">
+      <soap:operation soapAction="http://tempuri.org/SelectAllAccount" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SelectAllItem">
+      <soap:operation soapAction="http://tempuri.org/SelectAllItem" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SelectItemPerID">
+      <soap:operation soapAction="http://tempuri.org/SelectItemPerID" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateItem">
+      <soap:operation soapAction="http://tempuri.org/UpdateItem" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertRequestOrder">
+      <soap:operation soapAction="http://tempuri.org/InsertRequestOrder" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Get_RO_Requestor">
+      <soap:operation soapAction="http://tempuri.org/Get_RO_Requestor" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Print_Transaction">
+      <soap:operation soapAction="http://tempuri.org/Print_Transaction" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Get_RO_BY_RONumber">
+      <soap:operation soapAction="http://tempuri.org/Get_RO_BY_RONumber" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Get_RO_Details">
+      <soap:operation soapAction="http://tempuri.org/Get_RO_Details" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Get_RO_Endorser">
+      <soap:operation soapAction="http://tempuri.org/Get_RO_Endorser" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Get_RO_Recommenders">
+      <soap:operation soapAction="http://tempuri.org/Get_RO_Recommenders" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Get_RO_Approver">
+      <soap:operation soapAction="http://tempuri.org/Get_RO_Approver" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Get_RO_ByRONumber">
+      <soap:operation soapAction="http://tempuri.org/Get_RO_ByRONumber" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RO_UpdateForEndorse">
+      <soap:operation soapAction="http://tempuri.org/RO_UpdateForEndorse" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RO_UpdateForRecommend">
+      <soap:operation soapAction="http://tempuri.org/RO_UpdateForRecommend" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RO_UpdateForApproved">
+      <soap:operation soapAction="http://tempuri.org/RO_UpdateForApproved" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Select_RO_Approve">
+      <soap:operation soapAction="http://tempuri.org/Select_RO_Approve" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertCanvass">
+      <soap:operation soapAction="http://tempuri.org/InsertCanvass" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertCanvassDetails">
+      <soap:operation soapAction="http://tempuri.org/InsertCanvassDetails" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Approve_CanvassItems">
+      <soap:operation soapAction="http://tempuri.org/Approve_CanvassItems" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Get_Canvass">
+      <soap:operation soapAction="http://tempuri.org/Get_Canvass" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Get_Canvass_for_Noted">
+      <soap:operation soapAction="http://tempuri.org/Get_Canvass_for_Noted" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Get_Canvass_for_Approved">
+      <soap:operation soapAction="http://tempuri.org/Get_Canvass_for_Approved" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Get_CanvassDetailsNotApproved">
+      <soap:operation soapAction="http://tempuri.org/Get_CanvassDetailsNotApproved" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Get_CanvassDetailsApproved">
+      <soap:operation soapAction="http://tempuri.org/Get_CanvassDetailsApproved" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Get_CanvassDetailsAll">
+      <soap:operation soapAction="http://tempuri.org/Get_CanvassDetailsAll" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Get_CanvassDetailsAll1">
+      <soap:operation soapAction="http://tempuri.org/Get_CanvassDetailsAll1" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAllItems">
+      <soap:operation soapAction="http://tempuri.org/GetAllItems" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAllData">
+      <soap:operation soapAction="http://tempuri.org/GetAllData" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertConstruction">
+      <soap:operation soapAction="http://tempuri.org/InsertConstruction" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Update_Canvass_Noted">
+      <soap:operation soapAction="http://tempuri.org/Update_Canvass_Noted" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Update_Canvass_Approved">
+      <soap:operation soapAction="http://tempuri.org/Update_Canvass_Approved" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="Service1Soap12" type="tns:Service1Soap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="Select_Canvass_Approved">
+      <soap12:operation soapAction="http://tempuri.org/Select_Canvass_Approved" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SelectSummaryReport">
+      <soap12:operation soapAction="http://tempuri.org/SelectSummaryReport" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertPurchaseOrder">
+      <soap12:operation soapAction="http://tempuri.org/InsertPurchaseOrder" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Get_PO">
+      <soap12:operation soapAction="http://tempuri.org/Get_PO" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Get_Pending_PO">
+      <soap12:operation soapAction="http://tempuri.org/Get_Pending_PO" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Get_PO_for_Noted">
+      <soap12:operation soapAction="http://tempuri.org/Get_PO_for_Noted" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Get_PO_for_Approved">
+      <soap12:operation soapAction="http://tempuri.org/Get_PO_for_Approved" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Get_PODetailsAll">
+      <soap12:operation soapAction="http://tempuri.org/Get_PODetailsAll" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Update_PO_Noted">
+      <soap12:operation soapAction="http://tempuri.org/Update_PO_Noted" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Update_PO_Approved">
+      <soap12:operation soapAction="http://tempuri.org/Update_PO_Approved" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertMRIS">
+      <soap12:operation soapAction="http://tempuri.org/InsertMRIS" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Get_MRIS">
+      <soap12:operation soapAction="http://tempuri.org/Get_MRIS" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Get_MRISDetails">
+      <soap12:operation soapAction="http://tempuri.org/Get_MRISDetails" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Update_MRIS">
+      <soap12:operation soapAction="http://tempuri.org/Update_MRIS" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Select_PO_Approved">
+      <soap12:operation soapAction="http://tempuri.org/Select_PO_Approved" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Get_Pending_RR">
+      <soap12:operation soapAction="http://tempuri.org/Get_Pending_RR" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertRI">
+      <soap12:operation soapAction="http://tempuri.org/InsertRI" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Get_RI">
+      <soap12:operation soapAction="http://tempuri.org/Get_RI" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Get_RIDetails">
+      <soap12:operation soapAction="http://tempuri.org/Get_RIDetails" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Update_RI">
+      <soap12:operation soapAction="http://tempuri.org/Update_RI" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertReceivingReport">
+      <soap12:operation soapAction="http://tempuri.org/InsertReceivingReport" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertRRDetails">
+      <soap12:operation soapAction="http://tempuri.org/InsertRRDetails" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Get_RR_for_Noted">
+      <soap12:operation soapAction="http://tempuri.org/Get_RR_for_Noted" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Update_RR_Noted">
+      <soap12:operation soapAction="http://tempuri.org/Update_RR_Noted" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Update_RR_Approved">
+      <soap12:operation soapAction="http://tempuri.org/Update_RR_Approved" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Get_RR_for_Approved">
+      <soap12:operation soapAction="http://tempuri.org/Get_RR_for_Approved" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetSignatory">
+      <soap12:operation soapAction="http://tempuri.org/GetSignatory" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetSignatoryByUserId">
+      <soap12:operation soapAction="http://tempuri.org/GetSignatoryByUserId" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertSignatory">
+      <soap12:operation soapAction="http://tempuri.org/InsertSignatory" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateSignatory">
+      <soap12:operation soapAction="http://tempuri.org/UpdateSignatory" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteSignatory">
+      <soap12:operation soapAction="http://tempuri.org/DeleteSignatory" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Version">
+      <soap12:operation soapAction="http://tempuri.org/Version" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="VerifyUserLogin">
+      <soap12:operation soapAction="http://tempuri.org/VerifyUserLogin" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SelectDepartment">
+      <soap12:operation soapAction="http://tempuri.org/SelectDepartment" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertDepartment">
+      <soap12:operation soapAction="http://tempuri.org/InsertDepartment" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateDepartment">
+      <soap12:operation soapAction="http://tempuri.org/UpdateDepartment" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SelectBranch">
+      <soap12:operation soapAction="http://tempuri.org/SelectBranch" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertBranch">
+      <soap12:operation soapAction="http://tempuri.org/InsertBranch" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateBranch">
+      <soap12:operation soapAction="http://tempuri.org/UpdateBranch" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SelectPosition">
+      <soap12:operation soapAction="http://tempuri.org/SelectPosition" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertPosition">
+      <soap12:operation soapAction="http://tempuri.org/InsertPosition" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdatePosition">
+      <soap12:operation soapAction="http://tempuri.org/UpdatePosition" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RegisterUserAccount">
+      <soap12:operation soapAction="http://tempuri.org/RegisterUserAccount" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SelectUserByUserName">
+      <soap12:operation soapAction="http://tempuri.org/SelectUserByUserName" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SelectUserByUserID">
+      <soap12:operation soapAction="http://tempuri.org/SelectUserByUserID" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SelectAllUser">
+      <soap12:operation soapAction="http://tempuri.org/SelectAllUser" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SelectAllUserV2">
+      <soap12:operation soapAction="http://tempuri.org/SelectAllUserV2" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertAccessModule">
+      <soap12:operation soapAction="http://tempuri.org/InsertAccessModule" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertUserAccessRights">
+      <soap12:operation soapAction="http://tempuri.org/InsertUserAccessRights" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteUserAccessRights">
+      <soap12:operation soapAction="http://tempuri.org/DeleteUserAccessRights" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SelectUserAccessModule">
+      <soap12:operation soapAction="http://tempuri.org/SelectUserAccessModule" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateUser">
+      <soap12:operation soapAction="http://tempuri.org/UpdateUser" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateUserPassword">
+      <soap12:operation soapAction="http://tempuri.org/UpdateUserPassword" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertSupplier">
+      <soap12:operation soapAction="http://tempuri.org/InsertSupplier" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertAccounts">
+      <soap12:operation soapAction="http://tempuri.org/InsertAccounts" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertItems">
+      <soap12:operation soapAction="http://tempuri.org/InsertItems" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SelectSupplier">
+      <soap12:operation soapAction="http://tempuri.org/SelectSupplier" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateSupplier">
+      <soap12:operation soapAction="http://tempuri.org/UpdateSupplier" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateAccount">
+      <soap12:operation soapAction="http://tempuri.org/UpdateAccount" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SelectAllAccount">
+      <soap12:operation soapAction="http://tempuri.org/SelectAllAccount" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SelectAllItem">
+      <soap12:operation soapAction="http://tempuri.org/SelectAllItem" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SelectItemPerID">
+      <soap12:operation soapAction="http://tempuri.org/SelectItemPerID" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateItem">
+      <soap12:operation soapAction="http://tempuri.org/UpdateItem" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertRequestOrder">
+      <soap12:operation soapAction="http://tempuri.org/InsertRequestOrder" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Get_RO_Requestor">
+      <soap12:operation soapAction="http://tempuri.org/Get_RO_Requestor" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Print_Transaction">
+      <soap12:operation soapAction="http://tempuri.org/Print_Transaction" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Get_RO_BY_RONumber">
+      <soap12:operation soapAction="http://tempuri.org/Get_RO_BY_RONumber" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Get_RO_Details">
+      <soap12:operation soapAction="http://tempuri.org/Get_RO_Details" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Get_RO_Endorser">
+      <soap12:operation soapAction="http://tempuri.org/Get_RO_Endorser" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Get_RO_Recommenders">
+      <soap12:operation soapAction="http://tempuri.org/Get_RO_Recommenders" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Get_RO_Approver">
+      <soap12:operation soapAction="http://tempuri.org/Get_RO_Approver" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Get_RO_ByRONumber">
+      <soap12:operation soapAction="http://tempuri.org/Get_RO_ByRONumber" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RO_UpdateForEndorse">
+      <soap12:operation soapAction="http://tempuri.org/RO_UpdateForEndorse" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RO_UpdateForRecommend">
+      <soap12:operation soapAction="http://tempuri.org/RO_UpdateForRecommend" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RO_UpdateForApproved">
+      <soap12:operation soapAction="http://tempuri.org/RO_UpdateForApproved" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Select_RO_Approve">
+      <soap12:operation soapAction="http://tempuri.org/Select_RO_Approve" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertCanvass">
+      <soap12:operation soapAction="http://tempuri.org/InsertCanvass" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertCanvassDetails">
+      <soap12:operation soapAction="http://tempuri.org/InsertCanvassDetails" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Approve_CanvassItems">
+      <soap12:operation soapAction="http://tempuri.org/Approve_CanvassItems" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Get_Canvass">
+      <soap12:operation soapAction="http://tempuri.org/Get_Canvass" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Get_Canvass_for_Noted">
+      <soap12:operation soapAction="http://tempuri.org/Get_Canvass_for_Noted" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Get_Canvass_for_Approved">
+      <soap12:operation soapAction="http://tempuri.org/Get_Canvass_for_Approved" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Get_CanvassDetailsNotApproved">
+      <soap12:operation soapAction="http://tempuri.org/Get_CanvassDetailsNotApproved" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Get_CanvassDetailsApproved">
+      <soap12:operation soapAction="http://tempuri.org/Get_CanvassDetailsApproved" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Get_CanvassDetailsAll">
+      <soap12:operation soapAction="http://tempuri.org/Get_CanvassDetailsAll" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Get_CanvassDetailsAll1">
+      <soap12:operation soapAction="http://tempuri.org/Get_CanvassDetailsAll1" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAllItems">
+      <soap12:operation soapAction="http://tempuri.org/GetAllItems" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAllData">
+      <soap12:operation soapAction="http://tempuri.org/GetAllData" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertConstruction">
+      <soap12:operation soapAction="http://tempuri.org/InsertConstruction" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Update_Canvass_Noted">
+      <soap12:operation soapAction="http://tempuri.org/Update_Canvass_Noted" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Update_Canvass_Approved">
+      <soap12:operation soapAction="http://tempuri.org/Update_Canvass_Approved" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="Service1">
+    <wsdl:port name="Service1Soap" binding="tns:Service1Soap">
+      <soap:address location="http://localhost:50350/Service.asmx" />
+    </wsdl:port>
+    <wsdl:port name="Service1Soap12" binding="tns:Service1Soap12">
+      <soap12:address location="http://localhost:50350/Service.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

@@ -1,0 +1,117 @@
+USE [DBWMS]
+GO
+/****** Object:  StoredProcedure [dbo].[usp_GetPurchaseOrder]    Script Date: 11/09/2018 5:27:51 AM ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+-- =============================================
+-- Author:		<Captain America>
+-- Create date: <July 25, 2018>
+-- Description:	<SelectItems>
+-- =============================================
+ALTER PROCEDURE [dbo].[usp_GetPurchaseOrder]
+	-- Add the parameters for the stored procedure here
+		@userID int,
+		@stat int
+AS
+BEGIN
+	-- SET NOCOUNT ON added to prevent extra result sets from
+	-- interfering with SELECT statements.
+	SET NOCOUNT ON;
+
+    -- Insert statements for procedure here
+	if @stat = 1 -- get pending for noted
+	BEGIN
+		Select 
+		PO.*
+		,R.ID AS ROID
+		,R.RONumber as RONumber
+		,U5.firstName + ' '+ U5.lastName as userName
+		,R.UserID as RequestorID
+		,U2.firstName + ' '+U2.lastName as Requestor
+		,R.TargetDate
+		,R.DateRequested
+		,U.firstName + ' ' + U.lastName as Canvassor
+		,P.PositionName
+		,B.BranchName
+		,D.DeptName
+		,U3.firstName + ' '+U3.lastName as Noter
+		,U4.firstName + ' '+U4.lastName as Approver
+		FROM TblPurchaseOrder as PO
+		INNER JOIN tblCanvass as C ON C.CanvassNumber = PO.canvassNumber
+		INNER JOIn tblRO as R ON C.RONumber = R.RONumber
+		INNER JOIN tblPosition as P ON PO.PositionID = P.ID
+		INNER JOIN tblBranch as B ON PO.branchID = B.ID
+		INNER JOIN tblDepartment as D ON PO.departmentID = D.ID
+		INNER JOIN TblUser as U ON C.CanvassorID = U.id
+		INNER JOIN TblUser as U2 ON U2.id = R.UserID
+		INNER JOIN TblUser as U3 ON U3.id = PO.endorserID
+		INNER JOIN TblUser as U4 ON U4.id = PO.approversID
+		INNER JOIN TblUser as U5 ON U5.id = PO.userID
+		WHERE PO.endorserID = @userID and PO.[Status] = 'PENDING' ORDER BY C.ID
+		
+	END
+	else if @stat = 2 -- get Noted by for approved
+	BEGIn
+		Select 
+		PO.*
+		,R.ID AS ROID
+		,R.RONumber as RONumber
+		,U5.firstName + ' '+ U5.lastName as userName
+		,R.UserID as RequestorID
+		,U2.firstName + ' '+U2.lastName as Requestor
+		,R.TargetDate
+		,R.DateRequested
+		,U.firstName + ' ' + U.lastName as Canvassor
+		,P.PositionName
+		,B.BranchName
+		,D.DeptName
+		,U3.firstName + ' '+U3.lastName as Noter
+		,U4.firstName + ' '+U4.lastName as Approver
+		FROM TblPurchaseOrder as PO
+		INNER JOIN tblCanvass as C ON C.CanvassNumber = PO.canvassNumber
+		INNER JOIn tblRO as R ON C.RONumber = R.RONumber
+		INNER JOIN tblPosition as P ON PO.PositionID = P.ID
+		INNER JOIN tblBranch as B ON PO.branchID = B.ID
+		INNER JOIN tblDepartment as D ON PO.departmentID = D.ID
+		INNER JOIN TblUser as U ON C.CanvassorID = U.id
+		INNER JOIN TblUser as U2 ON U2.id = R.UserID
+		INNER JOIN TblUser as U3 ON U3.id = PO.endorserID
+		INNER JOIN TblUser as U4 ON U4.id = PO.approversID
+		INNER JOIN TblUser as U5 ON U5.id = PO.userID
+		WHERE PO.approversID = @userID and PO.[Status] = 'PO-NOTED' ORDER BY C.ID
+
+	END
+	else if @stat = 3 -- get Not Approved PO
+	BEGIN
+		Select 
+		PO.*
+		,R.ID AS ROID
+		,R.RONumber as RONumber
+		,U5.firstName + ' '+ U5.lastName as userName
+		,R.UserID as RequestorID
+		,U2.firstName + ' '+U2.lastName as Requestor
+		,R.TargetDate
+		,R.DateRequested
+		,U.firstName + ' ' + U.lastName as Canvassor
+		,P.PositionName
+		,B.BranchName
+		,D.DeptName
+		,U3.firstName + ' '+U3.lastName as Noter
+		,U4.firstName + ' '+U4.lastName as Approver
+		FROM TblPurchaseOrder as PO
+		INNER JOIN tblCanvass as C ON C.CanvassNumber = PO.canvassNumber
+		INNER JOIn tblRO as R ON C.RONumber = R.RONumber
+		INNER JOIN tblPosition as P ON PO.PositionID = P.ID
+		INNER JOIN tblBranch as B ON PO.branchID = B.ID
+		INNER JOIN tblDepartment as D ON PO.departmentID = D.ID
+		INNER JOIN TblUser as U ON C.CanvassorID = U.id
+		INNER JOIN TblUser as U2 ON U2.id = R.UserID
+		INNER JOIN TblUser as U3 ON U3.id = PO.endorserID
+		INNER JOIN TblUser as U4 ON U4.id = PO.approversID
+		INNER JOIN TblUser as U5 ON U5.id = PO.userID
+		WHERE PO.userID = @userID and PO.[Status] != 'PO-APPROVED' ORDER BY C.ID
+	END
+
+END

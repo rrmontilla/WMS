@@ -1,0 +1,44 @@
+USE [DBWMS]
+GO
+/****** Object:  StoredProcedure [dbo].[usp_UpdatePO]    Script Date: 11/09/2018 5:30:39 AM ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+-- =============================================
+-- Author:		<Author,,Name>
+-- Create date: <Create Date,,>
+-- Description:	<Description,,>
+-- =============================================
+ALTER PROCEDURE [dbo].[usp_UpdatePO]
+	-- Add the parameters for the stored procedure here
+	@id int
+	,@udate as datetime
+	,@stat int
+
+AS
+BEGIN
+	-- SET NOCOUNT ON added to prevent extra result sets from
+	-- interfering with SELECT statements.
+	SET NOCOUNT ON;
+
+    -- Insert statements for procedure here select * FROM tblCanvass
+	IF @stat = 1 -- noted by
+	BEGIN
+		Update [dbo].[TblPurchaseOrder]
+		Set dateEndorsed = @udate
+			,DateRecommended = @udate
+			, [Status] = 'PO-NOTED'
+			, UDT = GETDATE() 
+		Where ID = @id
+	END
+	ELSE IF @stat = 2
+	BEGIN
+		Update [dbo].[TblPurchaseOrder]
+		Set DateApproved = @udate
+			, [Status] = 'PO-APPROVED'
+			, UDT = GETDATE() 
+		Where ID = @id
+	END
+
+END

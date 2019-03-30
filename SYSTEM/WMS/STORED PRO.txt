@@ -1,0 +1,100 @@
+USE [DBWMS]
+GO
+/****** Object:  StoredProcedure [dbo].[SelectSuppliers]    Script Date: 06/09/2018 5:57:33 PM ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+-- =============================================
+-- Author:		<Jonathan Aguipo>
+-- Create date: <July 25, 2018>
+-- Description:	<SelectSuppliers>
+-- =============================================
+ALTER PROCEDURE [dbo].[SelectSuppliers] 
+	-- Add the parameters for the stored procedure here
+		@title		nvarchar(20)
+		,@ttype		nvarchar(20)
+AS
+BEGIN
+	-- SET NOCOUNT ON added to prevent extra result sets from
+	-- interfering with SELECT statements.
+	SET NOCOUNT ON;
+
+	IF(@title = 'Supplier')
+		BEGIN
+			IF(@ttype = 'GetLastRecord')
+				BEGIN
+					Select TOP 1 CAST(RIGHT(SupplierCode, 5) as int) from tblSupplier
+					ORDER BY CAST(RIGHT(SupplierCode, 5) as int) DESC
+				END
+			ELSE
+				BEGIN
+					Select [ID]
+						  ,[SupplierCode]
+						  ,[SupplierCodeTag]
+						  ,[SupplierName]
+						  ,[BusinessAddress]
+						  ,[TIN]
+						  ,[CellNumber]
+						  ,[TelNumber]
+						  ,[ContactPerson]
+						  ,[ProductsAvailed]
+						  ,[PT]
+						  ,[Country]
+						  ,[SupplierCurrency] from tblSupplier
+				END
+		END
+	ELSE IF (@title = 'Items')
+		BEGIN
+			IF(@ttype = 'GetLastRecord')
+				BEGIN
+					Select top 1 CAST(RIGHT(ItemCode, 5) as int) from tblItems
+					ORDER BY CAST(RIGHT(ItemCode, 5) as int) DESC
+				END
+			ELSE
+				BEGIN
+					Select [ID]
+						,[ItemCode]
+						,[ItemCodeTag]
+						,[ItemName]
+						,[Description]
+						,[Brand]
+						,[Unit]
+						,[SupplierName]
+						,[LTDelivery]
+						,[Inventory]
+						,[SSLevel] from tblItems
+				END
+		END
+	ELSE IF (@title = 'Accounts')
+		BEGIN
+			Select [ID]
+				  ,[ACODE]
+				  ,[PCC]
+				  ,[Description]
+				  ,[DebitCredit]
+				  ,[ACODEID]
+				  ,[SL]
+				  ,[GroupBy] from tblAccounts
+		END
+	ELSE IF (@title = 'Construction')
+		BEGIN
+			IF(@ttype = 'GetLastRecord')
+				BEGIN
+					Select top 1 CAST(RIGHT(Code, 5) as int) from tblConstructionItems
+					ORDER BY CAST(RIGHT(Code, 5) as int) DESC
+				END
+			ELSE
+				BEGIN
+					Select Code,
+							ItemCode,
+							[Description],
+							Quantity,
+							Unit,
+							GroupCode as ConstructionCode from tblConstructionItems
+				END
+		END
+		
+
+END
+

@@ -1,0 +1,38 @@
+USE [DBWMS]
+GO
+
+/****** Object:  Table [dbo].[tblRR]    Script Date: 06/09/2018 10:06:19 PM ******/
+SET ANSI_NULLS ON
+GO
+
+SET QUOTED_IDENTIFIER ON
+GO
+
+CREATE TABLE [dbo].[tblRR](
+	[ID] [int] IDENTITY(1,1) NOT NULL,
+	[RRNo] [nvarchar](20) NULL,
+	[PONo] [nvarchar](20) NULL,
+	[DateReceived] [datetime] NULL,
+	[Status] [nvarchar](20) NULL,
+	[DatePrepared] [datetime] NULL,
+	[Prepared] [int] NULL,
+	[DateNoted] [datetime] NULL,
+	[Noted] [int] NULL,
+	[DateConfirmed] [datetime] NULL,
+	[Confirmed] [int] NULL,
+	[User] [int] NULL,
+	[Position] [int] NULL,
+	[Branch] [int] NULL,
+	[Department] [int] NULL,
+	[TDT] [datetime] NULL,
+	[RDT] [datetime] NULL,
+	[UDT] [datetime] NULL,
+ CONSTRAINT [PK_tblRR] PRIMARY KEY CLUSTERED 
+(
+	[ID] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
+) ON [PRIMARY]
+
+GO
+
+

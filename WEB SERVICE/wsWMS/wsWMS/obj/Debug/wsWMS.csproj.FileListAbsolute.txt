@@ -1,0 +1,7 @@
+C:\Projects\WMS 01312019\WMS 01312019\WEB SERVICE\wsWMS\wsWMS\bin\wsWMS.dll.config
+C:\Projects\WMS 01312019\WMS 01312019\WEB SERVICE\wsWMS\wsWMS\bin\wsWMS.dll
+C:\Projects\WMS 01312019\WMS 01312019\WEB SERVICE\wsWMS\wsWMS\bin\wsWMS.pdb
+C:\Projects\WMS 01312019\WMS 01312019\WEB SERVICE\wsWMS\wsWMS\obj\Debug\wsWMS.csproj.CoreCompileInputs.cache
+C:\Projects\WMS 01312019\WMS 01312019\WEB SERVICE\wsWMS\wsWMS\obj\Debug\wsWMS.dll
+C:\Projects\WMS 01312019\WMS 01312019\WEB SERVICE\wsWMS\wsWMS\obj\Debug\wsWMS.pdb
+C:\Projects\WMS 01312019\WMS 01312019\WEB SERVICE\wsWMS\wsWMS\obj\Debug\wsWMS.csprojAssemblyReference.cache

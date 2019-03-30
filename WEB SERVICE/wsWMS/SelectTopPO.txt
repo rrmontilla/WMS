@@ -1,0 +1,25 @@
+USE [DBWMS]
+GO
+/****** Object:  StoredProcedure [dbo].[usp_SelectTopPONo]    Script Date: 11/09/2018 5:26:52 AM ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+-- =============================================
+-- Author:		<Jonathan Aguipo>
+-- Create date: <July 25, 2018>
+-- Description:	<SelectItems>
+-- =============================================
+ALTER PROCEDURE [dbo].[usp_SelectTopPONo] 
+	-- Add the parameters for the stored procedure here
+		
+AS
+BEGIN
+	-- SET NOCOUNT ON added to prevent extra result sets from
+	-- interfering with SELECT statements.
+	SET NOCOUNT ON;
+
+    -- Insert statements for procedure here
+	Select top 1 PONumber from tblPurchaseOrder Where year(TDT) = year(GETDATE()) order by ID desc
+
+END

@@ -1,0 +1,6 @@
+C:\Projects\WMS 01312019\WMS 01312019\SYSTEM\WMS\GlobalObject\bin\Debug\GlobalObject.dll
+C:\Projects\WMS 01312019\WMS 01312019\SYSTEM\WMS\GlobalObject\bin\Debug\GlobalObject.pdb
+C:\Projects\WMS 01312019\WMS 01312019\SYSTEM\WMS\GlobalObject\obj\Debug\GlobalObject.csprojAssemblyReference.cache
+C:\Projects\WMS 01312019\WMS 01312019\SYSTEM\WMS\GlobalObject\obj\Debug\GlobalObject.csproj.CoreCompileInputs.cache
+C:\Projects\WMS 01312019\WMS 01312019\SYSTEM\WMS\GlobalObject\obj\Debug\GlobalObject.dll
+C:\Projects\WMS 01312019\WMS 01312019\SYSTEM\WMS\GlobalObject\obj\Debug\GlobalObject.pdb

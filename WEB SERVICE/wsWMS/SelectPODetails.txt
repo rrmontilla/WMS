@@ -1,0 +1,47 @@
+USE [DBWMS]
+GO
+/****** Object:  StoredProcedure [dbo].[usp_SelectPODetails]    Script Date: 11/09/2018 5:29:03 AM ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+-- =============================================
+-- Author:		<Author,,Name>
+-- Create date: <Create Date,,>
+-- Description:	<Description,,>
+-- =============================================
+ALTER PROCEDURE [dbo].[usp_SelectPODetails]
+	-- Add the parameters for the stored procedure here
+	@canvasID int
+	,@stat int
+AS
+BEGIN
+	-- SET NOCOUNT ON added to prevent extra result sets from
+	-- interfering with SELECT statements.
+	SET NOCOUNT ON;
+
+    -- Insert statements for procedure here
+	IF(@stat = 1)
+	BEGIN
+		--Select * FROM tblCanvassDetail where Approved = 'NOT APPROVED' and CanvassID = @canvasID
+		Select cd.*, s.SupplierName, i.ItemName, i.ItemCode, s.SupplierCode FROM [dbo].[tblPurchaseOrderDetails] as cd
+		INNER JOIN tblSupplier as s	ON cd.SupplierID = s.ID
+		INNER JOIN tblItems as i	ON  cd.ItemID = i.ID
+		where Approved = 'NOT APPROVED' and cd.ID = @canvasID
+	END
+	ELSE IF (@stat = 2)
+	BEGIN 
+		--Select * FROM tblCanvassDetail where Approved = 'APPROVED' and CanvassID = @canvasID
+		Select cd.*, s.SupplierName, i.ItemName, i.ItemCode, s.SupplierCode FROM tblCanvassDetail as cd
+		INNER JOIN tblSupplier as s	ON cd.SupplierID = s.ID
+		INNER JOIN tblItems as i	ON  cd.ItemID = i.ID
+		where Approved = 'APPROVED' and CanvassID = @canvasID
+	END
+	ELSE IF (@stat = 3)
+	BEGIN
+		Select cd.*, s.SupplierName, i.ItemName, i.ItemCode, s.SupplierCode FROM [dbo].[tblPurchaseOrderDetails] as cd
+		INNER JOIN tblSupplier as s	ON cd.SupplierID = s.ID
+		INNER JOIN tblItems as i	ON  cd.ItemID = i.ID
+		where  POID = @canvasID
+	END
+END

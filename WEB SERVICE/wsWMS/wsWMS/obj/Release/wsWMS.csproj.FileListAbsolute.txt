@@ -1,0 +1,37 @@
+B:\Shared\wsWMS\wsWMS\bin\wsWMS.dll.config
+B:\Shared\wsWMS\wsWMS\bin\wsWMS.dll
+B:\Shared\wsWMS\wsWMS\bin\wsWMS.pdb
+B:\Shared\wsWMS\wsWMS\obj\Release\wsWMS.dll
+B:\Shared\wsWMS\wsWMS\obj\Release\wsWMS.pdb
+B:\Shared\wsWMS\wsWMS\obj\Release\wsWMS.csprojResolveAssemblyReference.cache
+E:\USB BACK UP 08222018\wsWMS\wsWMS\bin\wsWMS.dll.config
+E:\USB BACK UP 08222018\wsWMS\wsWMS\bin\wsWMS.dll
+E:\USB BACK UP 08222018\wsWMS\wsWMS\bin\wsWMS.pdb
+E:\USB BACK UP 08222018\wsWMS\wsWMS\obj\Release\wsWMS.csprojResolveAssemblyReference.cache
+E:\USB BACK UP 08222018\wsWMS\wsWMS\obj\Release\wsWMS.dll
+E:\USB BACK UP 08222018\wsWMS\wsWMS\obj\Release\wsWMS.pdb
+B:\Projects\WMS\WMS 0910218\wsWMS\wsWMS\obj\Release\wsWMS.csprojResolveAssemblyReference.cache
+B:\Projects\WMS\WMS 0910218\wsWMS\wsWMS\obj\Release\wsWMS.dll
+B:\Projects\WMS\WMS 0910218\wsWMS\wsWMS\obj\Release\wsWMS.pdb
+B:\Projects\WMS\WMS 0910218\wsWMS\wsWMS\bin\wsWMS.dll.config
+B:\Projects\WMS\WMS 0910218\wsWMS\wsWMS\bin\wsWMS.dll
+B:\Projects\WMS\WMS 0910218\wsWMS\wsWMS\bin\wsWMS.pdb
+B:\Projects\WMS\WMS\wsWMS\wsWMS\bin\wsWMS.dll.config
+B:\Projects\WMS\WMS\wsWMS\wsWMS\bin\wsWMS.dll
+B:\Projects\WMS\WMS\wsWMS\wsWMS\bin\wsWMS.pdb
+B:\Projects\WMS\WMS\wsWMS\wsWMS\obj\Release\wsWMS.csprojResolveAssemblyReference.cache
+B:\Projects\WMS\WMS\wsWMS\wsWMS\obj\Release\wsWMS.dll
+B:\Projects\WMS\WMS\wsWMS\wsWMS\obj\Release\wsWMS.pdb
+E:\2019\WMS\NEW MWS 01092019\WMS Project\WMS\wsWMS\wsWMS\bin\wsWMS.dll.config
+E:\2019\WMS\NEW MWS 01092019\WMS Project\WMS\wsWMS\wsWMS\bin\wsWMS.dll
+E:\2019\WMS\NEW MWS 01092019\WMS Project\WMS\wsWMS\wsWMS\bin\wsWMS.pdb
+E:\2019\WMS\NEW MWS 01092019\WMS Project\WMS\wsWMS\wsWMS\obj\Release\wsWMS.csprojResolveAssemblyReference.cache
+E:\2019\WMS\NEW MWS 01092019\WMS Project\WMS\wsWMS\wsWMS\obj\Release\wsWMS.dll
+E:\2019\WMS\NEW MWS 01092019\WMS Project\WMS\wsWMS\wsWMS\obj\Release\wsWMS.pdb
+C:\Projects\WMS 01312019\WMS 01312019\WEB SERVICE\wsWMS\wsWMS\bin\wsWMS.dll.config
+C:\Projects\WMS 01312019\WMS 01312019\WEB SERVICE\wsWMS\wsWMS\bin\wsWMS.dll
+C:\Projects\WMS 01312019\WMS 01312019\WEB SERVICE\wsWMS\wsWMS\bin\wsWMS.pdb
+C:\Projects\WMS 01312019\WMS 01312019\WEB SERVICE\wsWMS\wsWMS\obj\Release\wsWMS.csprojAssemblyReference.cache
+C:\Projects\WMS 01312019\WMS 01312019\WEB SERVICE\wsWMS\wsWMS\obj\Release\wsWMS.csproj.CoreCompileInputs.cache
+C:\Projects\WMS 01312019\WMS 01312019\WEB SERVICE\wsWMS\wsWMS\obj\Release\wsWMS.dll
+C:\Projects\WMS 01312019\WMS 01312019\WEB SERVICE\wsWMS\wsWMS\obj\Release\wsWMS.pdb

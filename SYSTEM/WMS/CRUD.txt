@@ -1,0 +1,221 @@
+using System;
+using System.Collections.Generic;
+using System.Configuration;
+using System.Data;
+using System.Data.SqlClient;
+using System.IO;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+
+namespace Uploading.Connection
+{
+    public class CRUD
+    {
+        Connection.Converter con = new Connection.Converter();
+        string sqlConn = ConfigurationManager.ConnectionStrings["DBWMS"].ConnectionString;
+
+        public int GetConnection()
+        {
+
+            using (SqlConnection conn = new SqlConnection(sqlConn))
+            {
+
+                SqlCommand cmd = new SqlCommand();
+                cmd.Connection = conn;
+                cmd.CommandType = System.Data.CommandType.StoredProcedure;
+                cmd.CommandText = "[dbo].[SelectAccounts]";
+
+                conn.Open();
+
+                cmd.ExecuteNonQuery();
+
+            }
+
+            return 0;
+        }
+
+        public int InsertSupplier(string data)
+        {
+            int intqry = 0;
+            int idnum = 0;
+            DataTable dt = con.ToDataTable(data);
+
+            idnum = GetLastCode("Supplier", "GetLastRecord");
+
+            foreach (DataRow row in dt.Rows)
+            {
+                idnum++;   
+                using (SqlConnection conn = new SqlConnection(sqlConn))
+                {
+
+                    SqlCommand cmd = new SqlCommand();
+                    cmd.Connection = conn;
+                    cmd.CommandType = System.Data.CommandType.StoredProcedure;
+                    cmd.CommandText = "[dbo].[InsertSupplier]";
+
+                    cmd.Parameters.Add("@supplierCode", SqlDbType.NVarChar, 20).Value = GenerateCode("SP", idnum.ToString());
+                    cmd.Parameters.Add("@supplierCodeTag", SqlDbType.NVarChar, 20).Value = row["SUPPLIER CODE"].ToString().Trim();
+                    cmd.Parameters.Add("@supplierName", SqlDbType.NVarChar, 500).Value = row["SUPPLIER NAME"].ToString().Trim();
+                    cmd.Parameters.Add("@businessAddress", SqlDbType.NVarChar, 1000).Value = row["ADDRESS"].ToString().Trim();
+                    cmd.Parameters.Add("@tin", SqlDbType.NVarChar, 25).Value = row["TIN #"].ToString().Trim();
+                    cmd.Parameters.Add("@cellNumber", SqlDbType.NVarChar, 30).Value = row["CELLPHONE NUMBER"].ToString().Trim();
+                    cmd.Parameters.Add("@telNumber", SqlDbType.NVarChar, 30).Value = row["CONTACT #"].ToString().Trim();
+                    cmd.Parameters.Add("@contactPerson", SqlDbType.NVarChar, 100).Value = row["CONTACT PERSON"].ToString().Trim();
+                    cmd.Parameters.Add("@productsAvailed", SqlDbType.NVarChar, 500).Value = row["PRODUCTS AVAILED"].ToString().Trim();
+                    cmd.Parameters.Add("@pt", SqlDbType.NVarChar, 20).Value = row["PT"].ToString().Trim();
+                    cmd.Parameters.Add("@country", SqlDbType.NVarChar, 50).Value = row["COUNTRY"].ToString().Trim();
+                    cmd.Parameters.Add("@supplierCurrency", SqlDbType.NVarChar, 20).Value = row["CURRENCY"].ToString().Trim();
+                    SqlParameter paramRetVal = new SqlParameter("@retVal", SqlDbType.Int);
+                    paramRetVal.Direction = ParameterDirection.Output;
+                    cmd.Parameters.Add(paramRetVal);
+
+                    conn.Open();
+
+                    cmd.ExecuteNonQuery();
+                    intqry = Convert.ToInt32(cmd.Parameters["@retVal"].Value);
+                }
+            }            
+
+            return intqry;
+        }
+
+        public int InsertItems(string data)
+        {
+            int intqry = 0;
+            int idnum = 0;
+            DataTable dt = con.ToDataTable(data);
+
+            idnum = GetLastCode("Items", "GetLastRecord");
+
+            foreach (DataRow row in dt.Rows)
+            {
+                idnum++;
+                using (SqlConnection conn = new SqlConnection(sqlConn))
+                {
+
+                    SqlCommand cmd = new SqlCommand();
+                    cmd.Connection = conn;
+                    cmd.CommandType = System.Data.CommandType.StoredProcedure;
+                    cmd.CommandText = "[dbo].[InsertItems]";
+
+                    cmd.Parameters.Add("@itemCode", SqlDbType.NVarChar, 20).Value = GenerateCode("IT", idnum.ToString());
+                    cmd.Parameters.Add("@itemCodeTag", SqlDbType.NVarChar, 20).Value = row["ITEM CODE"].ToString().Trim();
+                    cmd.Parameters.Add("@itemName", SqlDbType.NVarChar, 500).Value = row["ITEM NAME"].ToString().Trim();
+                    cmd.Parameters.Add("@description", SqlDbType.NVarChar, 1000).Value = row["DESCRIPTION"].ToString().Trim();
+                    cmd.Parameters.Add("@brand", SqlDbType.NVarChar, 250).Value = row["BRAND"].ToString().Trim();
+                    cmd.Parameters.Add("@unit", SqlDbType.NVarChar, 20).Value = row["UOM"].ToString().Trim();
+                    cmd.Parameters.Add("@supplierName", SqlDbType.NVarChar, 250).Value = row["SUPPLIER"].ToString().Trim();
+                    cmd.Parameters.Add("@ssLevel", SqlDbType.NVarChar, 20).Value = row["SAFETY LVL"].ToString().Trim();
+                    cmd.Parameters.Add("@LTDelivery", SqlDbType.NVarChar, 20).Value = row["LEAD DELIVERY"].ToString().Trim();
+                    cmd.Parameters.Add("@Inventory", SqlDbType.NVarChar, 2).Value = row["INVENTORY"].ToString().Trim();
+                    SqlParameter paramRetVal = new SqlParameter("@retVal", SqlDbType.Int);
+                    paramRetVal.Direction = ParameterDirection.Output;
+                    cmd.Parameters.Add(paramRetVal);
+
+                    conn.Open();
+
+                    cmd.ExecuteNonQuery();
+                    intqry = Convert.ToInt32(cmd.Parameters["@retVal"].Value);
+                }
+            }
+
+            return intqry;
+        }
+
+        public int InsertAccounts(string data)
+        {
+            int intqry = 0;
+            DataTable dt = con.ToDataTable(data);
+            
+            foreach (DataRow row in dt.Rows)
+            {
+                using (SqlConnection conn = new SqlConnection(sqlConn))
+                {
+
+                    SqlCommand cmd = new SqlCommand();
+                    cmd.Connection = conn;
+                    cmd.CommandType = System.Data.CommandType.StoredProcedure;
+                    cmd.CommandText = "[dbo].[InsertAccounts]";
+
+                    cmd.Parameters.Add("@acode", SqlDbType.NVarChar, 20).Value = row["ACCOUNT CODE"].ToString().Trim();
+                    cmd.Parameters.Add("@pcc", SqlDbType.NVarChar, 20).Value = row["PCC"].ToString().Trim();
+                    cmd.Parameters.Add("@description", SqlDbType.NVarChar, 250).Value = row["DESCRIPTION"].ToString().Trim();
+                    cmd.Parameters.Add("@debitCredit", SqlDbType.Int).Value = int.Parse(row["DEBIT CREDIT"].ToString().Trim());
+                    cmd.Parameters.Add("@acodeid", SqlDbType.Int).Value = int.Parse(row["ID"].ToString().Trim());
+                    cmd.Parameters.Add("@sl", SqlDbType.NVarChar, 20).Value = row["SL"].ToString().Trim();
+                    cmd.Parameters.Add("@groupBy", SqlDbType.NVarChar, 50).Value = row["GROUP"].ToString().Trim();
+                    SqlParameter paramRetVal = new SqlParameter("@retVal", SqlDbType.Int);
+                    paramRetVal.Direction = ParameterDirection.Output;
+                    cmd.Parameters.Add(paramRetVal);
+
+                    conn.Open();
+
+                    cmd.ExecuteNonQuery();
+                    intqry = Convert.ToInt32(cmd.Parameters["@retVal"].Value);
+                }
+            }
+
+            return intqry;
+        }
+
+        public int GetLastCode(string title, string data)
+        {
+            int intqry = 0;
+            DataSet ds = new DataSet();
+
+            using (SqlConnection conn = new SqlConnection(sqlConn))
+            {
+                SqlCommand cmd = new SqlCommand();
+                cmd.Connection = conn;
+                cmd.CommandType = System.Data.CommandType.StoredProcedure;
+                cmd.CommandText = "[SelectSuppliers]";
+                cmd.Parameters.Add("@title", SqlDbType.NVarChar, 20).Value = title;
+                cmd.Parameters.Add("@ttype", SqlDbType.NVarChar, 20).Value = data;
+                
+                SqlDataAdapter adp;
+
+                adp = new SqlDataAdapter(cmd);
+
+                adp.Fill(ds);
+            }
+
+            if (ds.Tables[0].Rows.Count > 0)
+            {
+                intqry = int.Parse(ds.Tables[0].Rows[0][0].ToString());
+            }
+            return intqry;
+        }
+
+        public string GenerateCode(string title, string data)
+        {
+            string code = "";
+            code = title + "-" + DateTime.Now.Year.ToString().Substring(2, 2) + "-" + data.ToString().PadLeft(5, '0');
+            return code;
+        }
+
+        public string GetAllData(string title, string ttype)
+        {
+            DataTable dt = new DataTable();
+
+            using (SqlConnection conn = new SqlConnection(sqlConn))
+            {
+                SqlCommand cmd = new SqlCommand();
+                cmd.Connection = conn;
+                cmd.CommandType = System.Data.CommandType.StoredProcedure;
+                cmd.CommandText = "[SelectSuppliers]";
+                cmd.Parameters.Add("@title", SqlDbType.NVarChar, 20).Value = title;
+                cmd.Parameters.Add("@ttype", SqlDbType.NVarChar, 20).Value = ttype;
+
+                SqlDataAdapter adp;
+
+                adp = new SqlDataAdapter(cmd);
+
+                adp.Fill(dt);
+            }
+
+            return con.ToXML(dt);
+        }
+    }
+}
